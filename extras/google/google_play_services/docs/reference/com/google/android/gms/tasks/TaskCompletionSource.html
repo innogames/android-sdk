@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -636,6 +646,40 @@ Summary:
         <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/tasks/TaskCompletionSource.html#setResult(TResult)">setResult</a></span>(TResult result)</nobr>
         
         <div class="jd-descrdiv">Completes the Task with the specified result.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/tasks/TaskCompletionSource.html#trySetException(java.lang.Exception)">trySetException</a></span>(Exception e)</nobr>
+        
+        <div class="jd-descrdiv">Completes the Task with the specified exception, unless the Task has already completed.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/tasks/TaskCompletionSource.html#trySetResult(TResult)">trySetResult</a></span>(TResult result)</nobr>
+        
+        <div class="jd-descrdiv">Completes the Task with the specified result, unless the Task has already completed.</div>
   
   </td></tr>
 
@@ -1021,6 +1065,74 @@ From class
 </td>
         </tr>
       </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="trySetException(java.lang.Exception)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">trySetException</span>
+      <span class="normal">(Exception e)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Completes the Task with the specified exception, unless the Task has already completed. If
+ the Task has already completed, the call does nothing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the exception was set successfully, <code>false</code> otherwise
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="trySetResult(TResult)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">trySetResult</span>
+      <span class="normal">(TResult result)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Completes the Task with the specified result, unless the Task has already completed. If
+ the Task has already completed, the call does nothing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the result was set successfully, <code>false</code> otherwise
+</li></ul>
   </div>
 
     </div>

@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -543,8 +553,7 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Builder object to construct these tasks before sending them to the network manager. Use
- either <code><a href="../../../../../../reference/com/google/android/gms/gcm/PeriodicTask.Builder.html">PeriodicTask.Builder</a></code> or
- <code><a href="../../../../../../reference/com/google/android/gms/gcm/Task.Builder.html">Task.Builder</a></code>
+ either <code><a href="../../../../../../reference/com/google/android/gms/gcm/PeriodicTask.Builder.html">PeriodicTask.Builder</a></code> or <code><a href="../../../../../../reference/com/google/android/gms/gcm/OneoffTask.Builder.html">OneoffTask.Builder</a></code>.
 </p>
 
 
@@ -1633,8 +1642,9 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Optional setter to specify whether this task should override any preexisting tasks with
- the same tag. This defaults to false, which means that a new task will not override an
- existing one.</p></div>
+ the same tag. This defaults to false, which means if a task with the same tag and service
+ is already present then the new task will be dropped instead of replacing the previous
+ task.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

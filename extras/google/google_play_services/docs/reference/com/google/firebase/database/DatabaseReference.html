@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -537,12 +547,11 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">A Firebase reference represents a particular location in your Database
- and can be used for reading or writing data to that Database location.
- <p>
- This class is the starting point for all Database operations. After you've
- initialized it with a URL, you can use it to read data, write data, and to create new
- DatabaseReferences.
+<p itemprop="articleBody">A Firebase reference represents a particular location in your Database and can be used for
+ reading or writing data to that Database location.
+
+ <p>This class is the starting point for all Database operations. After you've initialized it with
+ a URL, you can use it to read data, write data, and to create new DatabaseReferences.
 </p>
 
 
@@ -587,8 +596,8 @@ Summary:
         
         interface</nobr></td>
       <td class="jd-linkcol"><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a></td>
-      <td class="jd-descrcol" width="100%">This interface is used as a method of being notified when an operation
- has been acknowledged by the Database servers and can be considered complete&nbsp;</td>
+      <td class="jd-descrcol" width="100%">This interface is used as a method of being notified when an operation has been acknowledged by
+ the Database servers and can be considered complete&nbsp;</td>
     </tr>
     
     
@@ -730,7 +739,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#goOffline()">goOffline</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Manually disconnect the Firebase Database client from the server and disable automatic reconnection.</div>
+        <div class="jd-descrdiv">Manually disconnect the Firebase Database client from the server and disable automatic
+ reconnection.</div>
   
   </td></tr>
 
@@ -747,7 +757,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#goOnline()">goOnline</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Manually reestablish a connection to the Firebase Database server and enable automatic reconnection.</div>
+        <div class="jd-descrdiv">Manually reestablish a connection to the Firebase Database server and enable automatic
+ reconnection.</div>
   
   </td></tr>
 
@@ -1117,9 +1128,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(java.lang.String, java.lang.String)">endAt</a></span>(String value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1136,8 +1147,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(java.lang.String)">endAt</a></span>(String value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1154,9 +1165,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(double, java.lang.String)">endAt</a></span>(double value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1173,8 +1184,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(double)">endAt</a></span>(double value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1191,8 +1202,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(boolean)">endAt</a></span>(boolean value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1209,9 +1220,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(boolean, java.lang.String)">endAt</a></span>(boolean value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1345,8 +1356,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#keepSynced(boolean)">keepSynced</a></span>(boolean keepSynced)</nobr>
         
-        <div class="jd-descrdiv">By calling `keepSynced(true)` on a location, the data for that location will automatically be downloaded and
- kept in sync, even when no listeners are attached for that location.</div>
+        <div class="jd-descrdiv">By calling `keepSynced(true)` on a location, the data for that location will automatically be
+ downloaded and kept in sync, even when no listeners are attached for that location.</div>
   
   </td></tr>
 
@@ -1499,8 +1510,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(double)">startAt</a></span>(double value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1517,9 +1528,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(java.lang.String, java.lang.String)">startAt</a></span>(String value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1536,8 +1547,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(java.lang.String)">startAt</a></span>(String value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1554,9 +1565,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(double, java.lang.String)">startAt</a></span>(double value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1573,8 +1584,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(boolean)">startAt</a></span>(boolean value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1591,9 +1602,9 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(boolean, java.lang.String)">startAt</a></span>(boolean value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1965,8 +1976,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The last token in the location pointed to by this reference
-</li></ul>
+      <ul class="nolist"><li>The last token in the location pointed to by this reference </li></ul>
   </div>
 
     </div>
@@ -1998,7 +2008,8 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A DatabaseReference to the parent location, or null if this instance references the root location
+      <ul class="nolist"><li>A DatabaseReference to the parent location, or null if this instance references the
+     root location
 </li></ul>
   </div>
 
@@ -2031,8 +2042,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A reference to the root location of this Firebase Database
-</li></ul>
+      <ul class="nolist"><li>A reference to the root location of this Firebase Database </li></ul>
   </div>
 
     </div>
@@ -2061,9 +2071,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Manually disconnect the Firebase Database client from the server and disable automatic reconnection.
+  <div class="jd-tagdata jd-tagdescr"><p>Manually disconnect the Firebase Database client from the server and disable automatic
+ reconnection.
 
- Note: Invoking this method will impact all Firebase Database connections.
+ <p>Note: Invoking this method will impact all Firebase Database connections.
 </p></div>
 
     </div>
@@ -2092,9 +2103,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Manually reestablish a connection to the Firebase Database server and enable automatic reconnection.
+  <div class="jd-tagdata jd-tagdescr"><p>Manually reestablish a connection to the Firebase Database server and enable automatic
+ reconnection.
 
- Note: Invoking this method will impact all Firebase Database connections.
+ <p>Note: Invoking this method will impact all Firebase Database connections.
 </p></div>
 
     </div>
@@ -2184,10 +2196,10 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a reference to an auto-generated child location. The child key is generated
- client-side and incorporates an estimate of the server's time for sorting purposes. Locations
- generated on a single client will be sorted in the order that they are created,
- and will be sorted approximately in order across all clients.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a reference to an auto-generated child location. The child key is generated client-side
+ and incorporates an estimate of the server's time for sorting purposes. Locations generated on
+ a single client will be sorted in the order that they are created, and will be sorted
+ approximately in order across all clients.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>A DatabaseReference pointing to the new location
@@ -2291,9 +2303,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Run a transaction on the data at this location. For more information
- on running transactions, see
- <code><a href="../../../../../reference/com/google/firebase/database/Transaction.Handler.html">Transaction.Handler</a></code>.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Run a transaction on the data at this location. For more information on running transactions,
+ see <code><a href="../../../../../reference/com/google/firebase/database/Transaction.Handler.html">Transaction.Handler</a></code>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2303,9 +2314,8 @@ From class
         </tr>
         <tr>
           <th>fireLocalEvents</td>
-          <td>Defaults to true. If set to false, events will only be fired for
-                        the final result state of the transaction, and not for any
-                        intermediate states
+          <td>Defaults to true. If set to false, events will only be fired for the
+     final result state of the transaction, and not for any intermediate states
 </td>
         </tr>
       </table>
@@ -2337,9 +2347,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Run a transaction on the data at this location. For more information
- on running transactions, see
- <code><a href="../../../../../reference/com/google/firebase/database/Transaction.Handler.html">Transaction.Handler</a></code>.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Run a transaction on the data at this location. For more information on running transactions,
+ see <code><a href="../../../../../reference/com/google/firebase/database/Transaction.Handler.html">Transaction.Handler</a></code>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2377,26 +2386,30 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set a priority for the data at this Database location.
- Priorities can be used to provide a custom ordering for the children at a location
- (if no priorities are specified, the children are ordered by key).
- <br><br>
- You cannot set a priority on an empty location. For this reason
- setValue(data, priority) should be used when setting initial data with a specific priority
- and setPriority should be used when updating the priority of existing data.
- <br><br>
+  <div class="jd-tagdata jd-tagdescr"><p>Set a priority for the data at this Database location. Priorities can be used to provide a
+ custom ordering for the children at a location (if no priorities are specified, the children
+ are ordered by key). <br>
+ <br>
+ You cannot set a priority on an empty location. For this reason setValue(data, priority) should
+ be used when setting initial data with a specific priority and setPriority should be used when
+ updating the priority of existing data. <br>
+ <br>
  Children are sorted based on this priority using the following rules:
+
  <ul>
-     <li>Children with no priority come first.</li>
-     <li>Children with a number as their priority come next. They are sorted numerically by priority (small to large).</li>
-     <li>Children with a string as their priority come last. They are sorted lexicographically by priority.</li>
-     <li>Whenever two children have the same priority (including no priority),
-     they are sorted by key.  Numeric keys come first (sorted numerically),
-     followed by the remaining keys (sorted lexicographically).</li>
+   <li>Children with no priority come first.
+   <li>Children with a number as their priority come next. They are sorted numerically by
+       priority (small to large).
+   <li>Children with a string as their priority come last. They are sorted lexicographically by
+       priority.
+   <li>Whenever two children have the same priority (including no priority), they are sorted by
+       key. Numeric keys come first (sorted numerically), followed by the remaining keys (sorted
+       lexicographically).
  </ul>
- Note that numerical priorities are parsed and ordered as IEEE 754 double-precision floating-point numbers.
- Keys are always stored as strings and are treated as numeric only when they can be parsed as
- a 32-bit integer.</p></div>
+
+ Note that numerical priorities are parsed and ordered as IEEE 754 double-precision
+ floating-point numbers. Keys are always stored as strings and are treated as numeric only when
+ they can be parsed as a 32-bit integer.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2438,26 +2451,30 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set a priority for the data at this Database location.
- Priorities can be used to provide a custom ordering for the children at a location
- (if no priorities are specified, the children are ordered by key).
- <br><br>
- You cannot set a priority on an empty location. For this reason
- setValue(data, priority) should be used when setting initial data with a specific priority
- and setPriority should be used when updating the priority of existing data.
- <br><br>
+  <div class="jd-tagdata jd-tagdescr"><p>Set a priority for the data at this Database location. Priorities can be used to provide a
+ custom ordering for the children at a location (if no priorities are specified, the children
+ are ordered by key). <br>
+ <br>
+ You cannot set a priority on an empty location. For this reason setValue(data, priority) should
+ be used when setting initial data with a specific priority and setPriority should be used when
+ updating the priority of existing data. <br>
+ <br>
  Children are sorted based on this priority using the following rules:
+
  <ul>
-     <li>Children with no priority come first.</li>
-     <li>Children with a number as their priority come next. They are sorted numerically by priority (small to large).</li>
-     <li>Children with a string as their priority come last. They are sorted lexicographically by priority.</li>
-     <li>Whenever two children have the same priority (including no priority),
-     they are sorted by key.  Numeric keys come first (sorted numerically),
-     followed by the remaining keys (sorted lexicographically).</li>
+   <li>Children with no priority come first.
+   <li>Children with a number as their priority come next. They are sorted numerically by
+       priority (small to large).
+   <li>Children with a string as their priority come last. They are sorted lexicographically by
+       priority.
+   <li>Whenever two children have the same priority (including no priority), they are sorted by
+       key. Numeric keys come first (sorted numerically), followed by the remaining keys (sorted
+       lexicographically).
  </ul>
- Note that numerical priorities are parsed and ordered as IEEE 754 double-precision floating-point numbers.
- Keys are always stored as strings and are treated as numeric only when they can be parsed as
- a 32-bit integer.</p></div>
+
+ Note that numerical priorities are parsed and ordered as IEEE 754 double-precision
+ floating-point numbers. Keys are always stored as strings and are treated as numeric only when
+ they can be parsed as a 32-bit integer.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2499,28 +2516,33 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the data and priority to the given values.
- The native types accepted by this method for the value correspond to the JSON types:
+  <div class="jd-tagdata jd-tagdescr"><p>Set the data and priority to the given values. The native types accepted by this method for the
+ value correspond to the JSON types:
+
  <ul>
-  <li>Boolean</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- <br><br>
- In addition, you can set instances of your own class into this location, provided they
- satisfy the following constraints:
+
+ <br>
+ <br>
+ In addition, you can set instances of your own class into this location, provided they satisfy
+ the following constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
- <br><br>
- Generic collections of objects that satisfy the above constraints are also permitted,
- i.e. <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
+
+ <br>
+ <br>
+ Generic collections of objects that satisfy the above constraints are also permitted, i.e.
+ <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2566,28 +2588,34 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value. Passing null to setValue() will delete the data at the specified location.
- The native types accepted by this method for the value correspond to the JSON types:
+  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value. Passing null to setValue() will delete the
+ data at the specified location. The native types accepted by this method for the value
+ correspond to the JSON types:
+
  <ul>
-  <li>Boolean</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- <br><br>
- In addition, you can set instances of your own class into this location, provided they
- satisfy the following constraints:
+
+ <br>
+ <br>
+ In addition, you can set instances of your own class into this location, provided they satisfy
+ the following constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
- <br><br>
- Generic collections of objects that satisfy the above constraints are also permitted,
- i.e. <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
+
+ <br>
+ <br>
+ Generic collections of objects that satisfy the above constraints are also permitted, i.e.
+ <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2629,28 +2657,34 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the data and priority to the given values. Passing null to setValue() will delete the data at the specified location.
- The native types accepted by this method for the value correspond to the JSON types:
+  <div class="jd-tagdata jd-tagdescr"><p>Set the data and priority to the given values. Passing null to setValue() will delete the data
+ at the specified location. The native types accepted by this method for the value correspond to
+ the JSON types:
+
  <ul>
-  <li>Boolean</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- <br><br>
- In addition, you can set instances of your own class into this location, provided they
- satisfy the following constraints:
+
+ <br>
+ <br>
+ In addition, you can set instances of your own class into this location, provided they satisfy
+ the following constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
- <br><br>
- Generic collections of objects that satisfy the above constraints are also permitted,
- i.e. <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
+
+ <br>
+ <br>
+ Generic collections of objects that satisfy the above constraints are also permitted, i.e.
+ <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2696,28 +2730,34 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value. Passing null to setValue() will delete the data at the specified location.
- The native types accepted by this method for the value correspond to the JSON types:
+  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value. Passing null to setValue() will delete the
+ data at the specified location. The native types accepted by this method for the value
+ correspond to the JSON types:
+
  <ul>
-  <li>Boolean</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- <br><br>
- In addition, you can set instances of your own class into this location, provided they
- satisfy the following constraints:
+
+ <br>
+ <br>
+ In addition, you can set instances of your own class into this location, provided they satisfy
+ the following constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
- <br><br>
- Generic collections of objects that satisfy the above constraints are also permitted,
- i.e. <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
+
+ <br>
+ <br>
+ Generic collections of objects that satisfy the above constraints are also permitted, i.e.
+ <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2762,8 +2802,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The full location url for this reference
-</li></ul>
+      <ul class="nolist"><li>The full location url for this reference </li></ul>
   </div>
 
     </div>
@@ -2792,7 +2831,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Update the specific child keys to the specified values.  Passing null in a map to updateChildren() will remove the value at the specified location.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Update the specific child keys to the specified values. Passing null in a map to
+ updateChildren() will remove the value at the specified location.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2834,7 +2874,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Update the specific child keys to the specified values. Passing null in a map to updateChildren() will remove the value at the specified location.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Update the specific child keys to the specified values. Passing null in a map to
+ updateChildren() will remove the value at the specified location.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

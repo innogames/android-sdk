@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -484,12 +494,18 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Result that contains a <a href="https://source.android.com/compatibility/cts-intro.html">Compatibility Test Suite</a>
+<p itemprop="articleBody">Result that contains a <a href="https://source.android.com/compatibility/cts-intro.html">
+     Compatibility Test Suite</a>
  attestation result.
  <p>
- Use the <a href="https://developer.android.com/reference/com/google/android/gms/common/api/Result.html#getStatus()">getStatus()</a>
- method to obtain a <a href="https://developer.android.com/reference/com/google/android/gms/common/api/Status.html">Status</a>
- object. Calling the Status object's <a href="https://developer.android.com/reference/com/google/android/gms/common/api/Status.html#isSuccess()">isSuccess</a>
+ Use the <a href=
+ "https://developer.android.com/reference/com/google/android/gms/common/api/Result.html#getStatus()">
+ getStatus()</a>
+ method to obtain a <a href=
+ "https://developer.android.com/reference/com/google/android/gms/common/api/Status.html">
+ Status</a> object. Calling the Status object's <a href=
+ "https://developer.android.com/reference/com/google/android/gms/common/api/Status.html#isSuccess()">
+ isSuccess</a>
  indicates whether or not communication with the service was successful, but does not
  indicate if the device has passed the compatibility check. If the request was successful,
  <code><a href="../../../../../../reference/com/google/android/gms/safetynet/SafetyNetApi.AttestationResult.html#getJwsResult()">getJwsResult()</a></code> may be used to determine whether the device has passed the
@@ -695,7 +711,9 @@ From interface
   <div class="jd-tagdata jd-tagdescr"><p>Gets the JSON Web Signature attestation result.
  <p>
  Result is in JSON Web Signature format. For a description on usage of this result,
- see <a href="https://developer.android.com/google/play/safetynet/start.html#compat-check-response">Read the compatibility check response</a>.</p></div>
+ see <a href=
+ "https://developer.android.com/google/play/safetynet/start.html#compat-check-response">
+ Read the compatibility check response</a>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>JSON Web signature formatted attesation response or <code>null</code> if an error
@@ -703,7 +721,8 @@ From interface
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><a href="https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-33">JSON Web Signature</a></li>
+      <ul class="nolist"><li><a href="https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-33">
+     JSON Web Signature</a></li>
       </ul>
   </div>
 

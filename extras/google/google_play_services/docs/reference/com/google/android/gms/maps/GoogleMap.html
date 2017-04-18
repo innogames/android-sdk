@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -362,6 +372,7 @@ Doclava
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMarkerDragListener.html">GoogleMap.OnMarkerDragListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationButtonClickListener.html">GoogleMap.OnMyLocationButtonClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationChangeListener.html">GoogleMap.OnMyLocationChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolygonClickListener.html">GoogleMap.OnPolygonClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolylineClickListener.html">GoogleMap.OnPolylineClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.SnapshotReadyCallback.html">GoogleMap.SnapshotReadyCallback</a></li>
@@ -631,7 +642,6 @@ Summary:
     Replaced by <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraMoveStartedListener.html">GoogleMap.OnCameraMoveStartedListener</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraMoveListener.html">GoogleMap.OnCameraMoveListener</a></code> and
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraIdleListener.html">GoogleMap.OnCameraIdleListener</a></code>. The order in which the deprecated <code>onCameraChange</code> method
  will be called in relation to the methods in the new camera change listeners is undefined.
-
 </em>&nbsp;</td>
     </tr>
     
@@ -839,7 +849,7 @@ Summary:
       <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationChangeListener.html">GoogleMap.OnMyLocationChangeListener</a></td>
       <td class="jd-descrcol" width="100%"><em>
       This interface is deprecated.
-    use com.google.android.gms.location.FusedLocationProviderApi instead.
+    Use com.google.android.gms.location.FusedLocationProviderApi instead.
  FusedLocationProviderApi provides improved location finding and power usage and is used by
  the "My Location" blue dot. See the MyLocationDemoActivity in the sample applications folder
  for example example code, or the
@@ -856,12 +866,24 @@ Summary:
          
         
         interface</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a></td>
+      <td class="jd-descrcol" width="100%">A listener for POI taps.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        interface</nobr></td>
       <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolygonClickListener.html">GoogleMap.OnPolygonClickListener</a></td>
       <td class="jd-descrcol" width="100%">Callback interface for when a polygon is clicked.&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
       <td class="jd-typecol"><nobr>
         
          
@@ -873,7 +895,7 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
       <td class="jd-typecol"><nobr>
         
          
@@ -1488,6 +1510,23 @@ Summary:
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setMapStyle(com.google.android.gms.maps.model.MapStyleOptions)">setMapStyle</a></span>(<a href="../../../../../../reference/com/google/android/gms/maps/model/MapStyleOptions.html">MapStyleOptions</a> style)</nobr>
+        
+        <div class="jd-descrdiv">Sets the styling of the base map.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
             final
             
             
@@ -1502,7 +1541,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1519,7 +1558,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1536,7 +1575,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1553,7 +1592,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1569,14 +1608,13 @@ Summary:
     Replaced by <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveStartedListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveStartedListener)">setOnCameraMoveStartedListener(GoogleMap.OnCameraMoveStartedListener)</a></code>,
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveListener)">setOnCameraMoveListener(GoogleMap.OnCameraMoveListener)</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveCanceledListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveCanceledListener)">setOnCameraMoveCanceledListener(GoogleMap.OnCameraMoveCanceledListener)</a></code> and
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraIdleListener(com.google.android.gms.maps.GoogleMap.OnCameraIdleListener)">setOnCameraIdleListener(GoogleMap.OnCameraIdleListener)</a></code>.
-
 </em></div>
   
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1593,7 +1631,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1611,7 +1649,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1628,7 +1666,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1646,7 +1684,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1663,7 +1701,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1680,7 +1718,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1697,7 +1735,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1714,7 +1752,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1731,7 +1769,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1748,7 +1786,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1765,7 +1803,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1782,7 +1820,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1799,7 +1837,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1816,7 +1854,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1833,7 +1871,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1850,7 +1888,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1870,6 +1908,23 @@ Summary:
  <a href="https://developers.google.com/maps/documentation/android-api/location">
  Location Developer Guide</a>.
 </em></div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnPoiClickListener(com.google.android.gms.maps.GoogleMap.OnPoiClickListener)">setOnPoiClickListener</a></span>(<a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Sets a listener which will be triggered when a POI is clicked or tapped.</div>
   
   </td></tr>
 
@@ -3222,7 +3277,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns whether 3D buildings layer is enabled.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if buildings are enabled, false otherwise.
+      <ul class="nolist"><li><code>true</code> if buildings are enabled; <code>false</code> otherwise.
 </li></ul>
   </div>
 
@@ -3288,7 +3343,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Gets the status of the my-location layer.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if the my-location layer is enabled, false otherwise.
+      <ul class="nolist"><li><code>true</code> if the my-location layer is enabled; <code>false</code> otherwise.
 </li></ul>
   </div>
 
@@ -3322,7 +3377,7 @@ From class
  traffic data.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if traffic data is enabled, false otherwise.
+      <ul class="nolist"><li><code>true</code> if traffic data is enabled; <code>false</code> otherwise.
 </li></ul>
   </div>
 
@@ -3656,6 +3711,47 @@ From class
 </div>
 
 
+<A NAME="setMapStyle(com.google.android.gms.maps.model.MapStyleOptions)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">setMapStyle</span>
+      <span class="normal">(<a href="../../../../../../reference/com/google/android/gms/maps/model/MapStyleOptions.html">MapStyleOptions</a> style)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the styling of the base map.
+ <p>Using the style options, you can apply custom styles to features and elements on the map.
+ See <code><a href="../../../../../../reference/com/google/android/gms/maps/model/MapStyleOptions.html">MapStyleOptions</a></code> for style definition details.
+ <p>
+ Set to null to clear any previous custom styling.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>true</code> if the style was successfully parsed; <code>false</code> if problems were
+     detected with the <code><a href="../../../../../../reference/com/google/android/gms/maps/model/MapStyleOptions.html">MapStyleOptions</a></code>, including,
+     e.g. unparsable styling JSON, unrecognized feature type, unrecognized element type,
+     or invalid styler keys. If the return value is <code>false</code>, the current style is left
+     unchanged.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="setMapType(int)"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -3840,7 +3936,7 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>enabled</td>
-          <td>True to enable; false to disable.</td>
+          <td><code>true</code> to enable; <code>false</code> to disable.</td>
         </tr>
       </table>
   </div>
@@ -3886,7 +3982,6 @@ From class
     Replaced by <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveStartedListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveStartedListener)">setOnCameraMoveStartedListener(GoogleMap.OnCameraMoveStartedListener)</a></code>,
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveListener)">setOnCameraMoveListener(GoogleMap.OnCameraMoveListener)</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraMoveCanceledListener(com.google.android.gms.maps.GoogleMap.OnCameraMoveCanceledListener)">setOnCameraMoveCanceledListener(GoogleMap.OnCameraMoveCanceledListener)</a></code> and
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html#setOnCameraIdleListener(com.google.android.gms.maps.GoogleMap.OnCameraIdleListener)">setOnCameraIdleListener(GoogleMap.OnCameraIdleListener)</a></code>.
-
 
   </p>
   <div class="jd-tagdata jd-tagdescr"><p>Sets a callback that's invoked when the camera changes.</p></div>
@@ -4582,6 +4677,36 @@ From class
         </tr>
       </table>
   </div>
+
+    </div>
+</div>
+
+
+<A NAME="setOnPoiClickListener(com.google.android.gms.maps.GoogleMap.OnPoiClickListener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+        final 
+         
+        void
+      </span>
+      <span class="sympad">setOnPoiClickListener</span>
+      <span class="normal">(<a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a listener which will be triggered when a POI is clicked or tapped.
+ <p>Pass <code>null</code> to clear the listener.
+</p></div>
 
     </div>
 </div>

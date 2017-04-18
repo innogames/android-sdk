@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -513,12 +523,11 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The OnDisconnect class is used to manage operations that will be run on the server
- when this client disconnects. It can be used to add or remove data based on a client's
- connection status. It is very useful in applications looking for 'presence' functionality.
- <br><br>
- Instances of this class are obtained by calling <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#onDisconnect()">onDisconnect</a></code>
- on a Firebase Database ref.
+<p itemprop="articleBody">The OnDisconnect class is used to manage operations that will be run on the server when this
+ client disconnects. It can be used to add or remove data based on a client's connection status.
+ It is very useful in applications looking for 'presence' functionality. <br>
+ <br>
+ Instances of this class are obtained by calling <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#onDisconnect()">onDisconnect</a></code> on a Firebase Database ref.
 </p>
 
 
@@ -659,9 +668,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, double, com.google.firebase.database.DatabaseReference.CompletionListener)">setValue</a></span>(Object value, double priority, <a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -678,9 +686,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, java.util.Map, com.google.firebase.database.DatabaseReference.CompletionListener)">setValue</a></span>(Object value, Map priority, <a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -697,9 +704,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, java.lang.String)">setValue</a></span>(Object value, String priority)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -716,9 +722,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, double)">setValue</a></span>(Object value, double priority)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -735,9 +740,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, java.lang.String, com.google.firebase.database.DatabaseReference.CompletionListener)">setValue</a></span>(Object value, String priority, <a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -754,9 +758,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object, com.google.firebase.database.DatabaseReference.CompletionListener)">setValue</a></span>(Object value, <a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value when the client is disconnected
+ (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -773,9 +776,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#setValue(java.lang.Object)">setValue</a></span>(Object value)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).</div>
+        <div class="jd-descrdiv">Ensure the data at this location is set to the specified value when the client is disconnected
+ (due to closing the browser, navigating to a new page, or network issues).</div>
   
   </td></tr>
 
@@ -792,8 +794,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#updateChildren(java.util.Map<java.lang.String, java.lang.Object>)">updateChildren</a></span>(Map&lt;String,&nbsp;Object&gt; update)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data has the specified child values updated when
- the client is disconnected</div>
+        <div class="jd-descrdiv">Ensure the data has the specified child values updated when the client is disconnected</div>
   
   </td></tr>
 
@@ -810,8 +811,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/OnDisconnect.html#updateChildren(java.util.Map<java.lang.String, java.lang.Object>, com.google.firebase.database.DatabaseReference.CompletionListener)">updateChildren</a></span>(Map&lt;String,&nbsp;Object&gt; update, <a href="../../../../../reference/com/google/firebase/database/DatabaseReference.CompletionListener.html">DatabaseReference.CompletionListener</a> listener)</nobr>
         
-        <div class="jd-descrdiv">Ensure the data has the specified child values updated when
- the client is disconnected</div>
+        <div class="jd-descrdiv">Ensure the data has the specified child values updated when the client is disconnected</div>
   
   </td></tr>
 
@@ -1227,13 +1227,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1279,13 +1277,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1331,13 +1327,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1383,13 +1377,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1435,13 +1427,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value and priority when the client is
+ disconnected (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1487,13 +1477,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value when the client is disconnected
+ (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1535,13 +1523,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value when
- the client is disconnected (due to closing the browser, navigating
- to a new page, or network issues).
- <br><br>
- This method is especially useful for implementing "presence" systems,
- where a value should be changed or cleared when a user disconnects
- so that they appear "offline" to other users.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data at this location is set to the specified value when the client is disconnected
+ (due to closing the browser, navigating to a new page, or network issues). <br>
+ <br>
+ This method is especially useful for implementing "presence" systems, where a value should be
+ changed or cleared when a user disconnects so that they appear "offline" to other users.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1583,8 +1569,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data has the specified child values updated when
- the client is disconnected</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data has the specified child values updated when the client is disconnected</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1626,8 +1611,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data has the specified child values updated when
- the client is disconnected</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Ensure the data has the specified child values updated when the client is disconnected</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

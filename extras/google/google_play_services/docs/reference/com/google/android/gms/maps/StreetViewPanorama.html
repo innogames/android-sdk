@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -362,6 +372,7 @@ Doclava
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMarkerDragListener.html">GoogleMap.OnMarkerDragListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationButtonClickListener.html">GoogleMap.OnMyLocationButtonClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationChangeListener.html">GoogleMap.OnMyLocationChangeListener</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolygonClickListener.html">GoogleMap.OnPolygonClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolylineClickListener.html">GoogleMap.OnPolylineClickListener</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.SnapshotReadyCallback.html">GoogleMap.SnapshotReadyCallback</a></li>
@@ -539,8 +550,8 @@ Summary:
 <p itemprop="articleBody">This is the main class of the Street View feature in the Google Maps Android API and is the
  entry point for all methods related to Street View panoramas. You cannot instantiate a
  <code><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.html">StreetViewPanorama</a></code> object directly, rather, you must obtain one from the
- <code>getStreetViewPanorama()</code> method on a <code><a href="../../../../../../reference/com/google/android/gms/maps/MapFragment.html">MapFragment</a></code> or <code><a href="../../../../../../reference/com/google/android/gms/maps/MapView.html">MapView</a></code> that you have
- added to your application.
+ <code>#getStreetViewPanoramaAsync()</code> method on a <code><a href="../../../../../../reference/com/google/android/gms/maps/MapFragment.html">MapFragment</a></code> or <code><a href="../../../../../../reference/com/google/android/gms/maps/MapView.html">MapView</a></code> that
+ you have added to your application.
  <p>
  Note: Similar to a <code><a href="../../../../../../reference/android/view/View.html">View</a></code> object, a <code><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.html">StreetViewPanorama</a></code> can only
  be read and modified from the main thread. Calling <code><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.html">StreetViewPanorama</a></code> methods from
@@ -1395,7 +1406,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not the panning gestures are enabled for the user</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if panning gestures are enabled
+      <ul class="nolist"><li><code>true</code> if panning gestures are enabled
 </li></ul>
   </div>
 
@@ -1428,7 +1439,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not the street names appear on the panorama</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if street names are shown
+      <ul class="nolist"><li><code>true</code> if street names are shown
 </li></ul>
   </div>
 
@@ -1462,7 +1473,7 @@ From class
  as well as using the navigation links</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if navigation is enabled
+      <ul class="nolist"><li><code>true</code> if navigation is enabled
 </li></ul>
   </div>
 
@@ -1495,7 +1506,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns whether or not the zoom gestures are enabled for the user</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if zoom gestures are enabled
+      <ul class="nolist"><li><code>true</code> if zoom gestures are enabled
 </li></ul>
   </div>
 
@@ -1541,9 +1552,9 @@ From class
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A <code><a href="../../../../../../reference/android/graphics/Point.html">Point</a></code> representing the screen location in screen pixels. Returns null if
-         the orientation is unable to be projected on the screen (e.g. behind the user's
-         field of view)
+      <ul class="nolist"><li>A <code><a href="../../../../../../reference/android/graphics/Point.html">Point</a></code> representing the screen location in screen pixels. Returns
+         <code>null</code> if the orientation is unable to be projected on the screen (e.g. behind
+         the user's field of view)
 </li></ul>
   </div>
 
@@ -1781,7 +1792,7 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>enablePanning</td>
-          <td>True if users are allowed to use panning gestures
+          <td><code>true</code> if users are allowed to use panning gestures
 </td>
         </tr>
       </table>
@@ -1938,7 +1949,7 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>enableStreetNames</td>
-          <td>True if users are able to see street names on panoramas
+          <td><code>true</code> if users are able to see street names on panoramas
 </td>
         </tr>
       </table>
@@ -1976,7 +1987,7 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>enableUserNavigation</td>
-          <td>True if users are allowed to move to another panorama
+          <td><code>true</code> if users are allowed to move to another panorama
 </td>
         </tr>
       </table>
@@ -2014,7 +2025,7 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>enableZoom</td>
-          <td>True if users are allowed to use zoom gestures
+          <td><code>true</code> if users are allowed to use zoom gestures
 </td>
         </tr>
       </table>

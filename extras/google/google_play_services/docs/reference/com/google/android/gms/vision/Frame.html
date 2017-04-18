@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -510,9 +520,9 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Image data with associated <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.Metadata.html">metadata</a></code>.<p>
+<p itemprop="articleBody">Image data with associated <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.Metadata.html">metadata</a></code>.
 
- A frame is constructed via the <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.Builder.html">builder</a></code> class, specifying the image data,
+ <p>A frame is constructed via the <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.Builder.html">builder</a></code> class, specifying the image data,
  dimensions, and sequencing information (frame ID, timestamp).
 </p>
 
@@ -655,8 +665,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#getBitmap()">getBitmap</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the bitmap which was specified in creating this frame, or null if no bitmap was used
- to create this frame.</div>
+        <div class="jd-descrdiv">Returns the bitmap which was specified in creating this frame, or null if no bitmap was used to
+ create this frame.</div>
   
   </td></tr>
 
@@ -1123,9 +1133,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the bitmap which was specified in creating this frame, or null if no bitmap was used
- to create this frame.  If the bitmap is not available, then <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#getGrayscaleImageData()">getGrayscaleImageData()</a></code>
- should be called instead.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the bitmap which was specified in creating this frame, or null if no bitmap was used to
+ create this frame. If the bitmap is not available, then <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#getGrayscaleImageData()">getGrayscaleImageData()</a></code> should
+ be called instead.
 </p></div>
 
     </div>
@@ -1154,14 +1164,14 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the grayscale version of the frame data, with one byte per pixel.  Note that the
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the grayscale version of the frame data, with one byte per pixel. Note that the
  returned byte buffer will be prefixed by the Y channel (i.e., the grayscale image data), but
- may optionally include additional image data beyond the Y channel (this can be ignored).<p>
+ may optionally include additional image data beyond the Y channel (this can be ignored).
 
- If a bitmap was specified when creating this frame, the bitmap is first converted to a
- grayscale byte[] (allocation / copy required).  It is recommended that you use the bitmap
- directly through <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#getBitmap()">getBitmap()</a></code> if the associated native detection code supports it,
- since this would move the grayscale conversion into native code where it will be faster.
+ <p>If a bitmap was specified when creating this frame, the bitmap is first converted to a
+ grayscale byte[] (allocation / copy required). It is recommended that you use the bitmap
+ directly through <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#getBitmap()">getBitmap()</a></code> if the associated native detection code supports it, since
+ this would move the grayscale conversion into native code where it will be faster.
 </p></div>
 
     </div>
@@ -1190,8 +1200,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the metadata associated with the frame.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the metadata associated with the frame. </p></div>
 
     </div>
 </div>

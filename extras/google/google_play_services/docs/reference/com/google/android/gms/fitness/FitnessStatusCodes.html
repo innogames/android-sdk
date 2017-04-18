@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -319,6 +325,10 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/crash/package-summary.html">com.google.firebase.crash</a></li>
@@ -344,6 +354,7 @@ Doclava
       <ul>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/BleApi.html">BleApi</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/ConfigApi.html">ConfigApi</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/GoalsApi.html">GoalsApi</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/HistoryApi.html">HistoryApi</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/RecordingApi.html">RecordingApi</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/fitness/SensorsApi.html">SensorsApi</a></li>
@@ -715,12 +726,20 @@ Summary:
     
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#REQUIRES_APP_WHITELISTING">REQUIRES_APP_WHITELISTING</a></td>
+        <td class="jd-descrcol" width="100%">Status code denotes that access to a requested data type was denied because the app has not
+ been whitelisted by Google for access to that type.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#SUCCESS_ALREADY_SUBSCRIBED">SUCCESS_ALREADY_SUBSCRIBED</a></td>
         <td class="jd-descrcol" width="100%">The subscribe request succeeded, but the subscription already existed, so it was a no-op.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#SUCCESS_LISTENER_NOT_REGISTERED_FOR_FITNESS_DATA_UPDATES">SUCCESS_LISTENER_NOT_REGISTERED_FOR_FITNESS_DATA_UPDATES</a></td>
         <td class="jd-descrcol" width="100%">The <code><a href="../../../../../../reference/android/app/PendingIntent.html">PendingIntent</a></code> sent by the client, to unregister itself from listening
@@ -729,42 +748,42 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#SUCCESS_NO_CLAIMED_DEVICE">SUCCESS_NO_CLAIMED_DEVICE</a></td>
         <td class="jd-descrcol" width="100%">The unclaim request succeeded, but no matching claimed device was found.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#SUCCESS_NO_DATA_SOURCES">SUCCESS_NO_DATA_SOURCES</a></td>
         <td class="jd-descrcol" width="100%">The subscribe request succeeded, but no data sources are currently available that match it.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#TRANSIENT_ERROR">TRANSIENT_ERROR</a></td>
         <td class="jd-descrcol" width="100%">Status code denotes that there was a transient error accessing Google Fit services.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#UNKNOWN_AUTH_ERROR">UNKNOWN_AUTH_ERROR</a></td>
         <td class="jd-descrcol" width="100%">Status code denotes that an unknown error occurred while trying to obtain an OAuth token.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#UNSUPPORTED_ACCOUNT">UNSUPPORTED_ACCOUNT</a></td>
         <td class="jd-descrcol" width="100%">Status code denotes that the account is not supported.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/fitness/FitnessStatusCodes.html#UNSUPPORTED_PLATFORM">UNSUPPORTED_PLATFORM</a></td>
         <td class="jd-descrcol" width="100%">Status code denotes that the operation is not supported by Google Fit.</td>
@@ -1961,6 +1980,46 @@ From class
             
                 5000
                 (0x00001388)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="REQUIRES_APP_WHITELISTING"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        REQUIRES_APP_WHITELISTING
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Status code denotes that access to a requested data type was denied because the app has not
+ been whitelisted by Google for access to that type.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                5024
+                (0x000013a0)
             
         </span>
         </div>

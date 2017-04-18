@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -408,13 +418,6 @@ Doclava
   
 
   
-  
-   
-  
-  
-  
-
-  
    
   
   
@@ -491,7 +494,7 @@ Summary:
   
       implements 
       
-        SafeParcelable 
+        Parcelable 
       
   
   
@@ -531,17 +534,14 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Barcode represents a single recognized barcode and its value.<p>
+<p itemprop="articleBody">Barcode represents a single recognized barcode and its value.
 
- The barcode's raw, unmodified, and uninterpreted content is
- returned in the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#rawValue">rawValue</a></code> field, while the barcode type
- (i.e. its encoding) can be found in the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code>
- field.
+ <p>The barcode's raw, unmodified, and uninterpreted content is returned in the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#rawValue">rawValue</a></code>
+ field, while the barcode type (i.e. its encoding) can be found in the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 
- Barcodes that contain structured data (commonly done with QR codes)
- are parsed and iff valid, the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field is set to
- one of the value format constants (e.g. <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#GEO">GEO</a></code>) and the
- corresponding field is set (e.g. <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#geoPoint">geoPoint</a></code>).
+ <p>Barcodes that contain structured data (commonly done with QR codes) are parsed and iff valid,
+ the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field is set to one of the value format constants (e.g. <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#GEO">GEO</a></code>)
+ and the corresponding field is set (e.g. <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#geoPoint">geoPoint</a></code>).
 </p>
 
 
@@ -743,8 +743,7 @@ Summary:
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#ALL_FORMATS">ALL_FORMATS</a></td>
-        <td class="jd-descrcol" width="100%">Barcode format constant representing the union of all supported
- formats.</td>
+        <td class="jd-descrcol" width="100%">Barcode format constant representing the union of all supported formats.</td>
     </tr>
     
     
@@ -935,37 +934,6 @@ Summary:
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Constants</div></th></tr>
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable" class="jd-expando-trigger closed"
-          ><img id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>From interface
-com.google.android.gms.common.internal.safeparcel.SafeParcelable
-<div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable">
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol">NULL</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-</table>
-  </div>
-</div>
-</td></tr>
 
 
 
@@ -1411,8 +1379,6 @@ From class
 
 
 
-
-
 <tr class="api apilevel-" >
 <td colspan="12">
   <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.Parcelable" class="jd-expando-trigger closed"
@@ -1517,9 +1483,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant representing the union of all supported
- formats. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
- to select formats to recognize. This is also the default setting.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant representing the union of all supported formats. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize. This is also the
+ default setting.
 </p></div>
 
     
@@ -1558,10 +1523,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for AZTEC. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for AZTEC. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
+ to select formats to recognize, and also specifies a detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1600,9 +1563,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for calendar events.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for calendar events. Specifies the format of a Barcode value via
+ the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -1641,10 +1603,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Codabar. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Codabar. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1683,10 +1643,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 128. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 128. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1725,10 +1683,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 39. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 39. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1767,10 +1723,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 93. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Code 93. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1809,9 +1763,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for contact information.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for contact information. Specifies the format of a Barcode value
+ via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -1850,10 +1803,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Data Matrix. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for Data Matrix. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1892,9 +1843,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for driver's license data.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for driver's license data. Specifies the format of a Barcode
+ value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -1933,10 +1883,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for EAN-13. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for EAN-13. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
+ to select formats to recognize, and also specifies a detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -1975,10 +1923,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for EAN-8. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for EAN-8. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
+ to select formats to recognize, and also specifies a detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2017,9 +1963,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for email message details.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for email message details. Specifies the format of a Barcode
+ value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2058,9 +2003,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for geographic coordinates.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for geographic coordinates. Specifies the format of a Barcode
+ value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2099,9 +2043,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for ISBNs.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for ISBNs. Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2140,10 +2082,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for ITF (Interleaved Two-of-Five). Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for ITF (Interleaved Two-of-Five). Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2182,10 +2122,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for PDF-417. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for PDF-417. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2224,9 +2162,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for phone numbers.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for phone numbers. Specifies the format of a Barcode value via
+ the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2265,9 +2202,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for product codes.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for product codes. Specifies the format of a Barcode value via
+ the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2306,10 +2242,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for QR Code. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for QR Code. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select formats to recognize, and also specifies a
+ detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2348,9 +2282,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for SMS details.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for SMS details. Specifies the format of a Barcode value via the
+ <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2389,9 +2322,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for plain text.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for plain text. Specifies the format of a Barcode value via the
+ <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2430,10 +2362,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for UPC-A. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for UPC-A. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
+ to select formats to recognize, and also specifies a detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2472,10 +2402,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for UPC-E. Pass into
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code> to select
- formats to recognize, and also specifies a detected Barcode's
- format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode format constant for UPC-E. Pass into <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/BarcodeDetector.Builder.html#setBarcodeFormats(int)">setBarcodeFormats(int)</a></code>
+ to select formats to recognize, and also specifies a detected Barcode's format via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#format">format</a></code> field.
 </p></div>
 
     
@@ -2514,9 +2442,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for URLs/bookmarks.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for URLs/bookmarks. Specifies the format of a Barcode value via
+ the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2555,9 +2482,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for WiFi access point details.
- Specifies the format of a Barcode value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code>
- field.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value format constant for WiFi access point details. Specifies the format of a Barcode
+ value via the <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#valueFormat">valueFormat</a></code> field.
 </p></div>
 
     
@@ -2662,8 +2588,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>4 corner points in clockwise direction starting with top-left. Due to the
- possible perspective distortions, this is not necessarily a rectangle.
+  <div class="jd-tagdata jd-tagdescr"><p>4 corner points in clockwise direction starting with top-left. Due to the possible perspective
+ distortions, this is not necessarily a rectangle.
 </p></div>
 
     
@@ -2692,12 +2618,11 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value in a user-friendly format. May omit some of the information
- encoded in the barcode. For example, in the case above the display_value
- might be 'https://www.google.com'. If valueFormat==TEXT, this field
- will be equal to rawValue. This value may be multiline, for example,
- when line breaks are encoded into the original TEXT barcode value.
- May include the supplement value.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value in a user-friendly format. May omit some of the information encoded in the
+ barcode. For example, in the case above the display_value might be 'https://www.google.com'. If
+ valueFormat==TEXT, this field will be equal to rawValue. This value may be multiline, for
+ example, when line breaks are encoded into the original TEXT barcode value. May include the
+ supplement value.
 </p></div>
 
     
@@ -2784,9 +2709,8 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>Barcode format, for example <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#EAN_13">EAN_13</a></code>.
 
- Note that this field may contain values not present in the current set
- of format constants. When mapping this value to something else, it is
- advisable to have a default/fallback case.
+ <p>Note that this field may contain values not present in the current set of format constants.
+ When mapping this value to something else, it is advisable to have a default/fallback case.
 </p></div>
 
     
@@ -2871,9 +2795,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Barcode value as it was encoded in the barcode. Structured values are not
- parsed, for example: 'MEBKM:TITLE:Google;URL:https://www.google.com;;'
- Does not include the supplement value.
+  <div class="jd-tagdata jd-tagdescr"><p>Barcode value as it was encoded in the barcode. Structured values are not parsed, for example:
+ 'MEBKM:TITLE:Google;URL:https://www.google.com;;' Does not include the supplement value.
 </p></div>
 
     
@@ -2958,12 +2881,11 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Format of the barcode value. For example, <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#TEXT">TEXT</a></code>,
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#PRODUCT">PRODUCT</a></code>, <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#URL">URL</a></code>, etc.
+  <div class="jd-tagdata jd-tagdescr"><p>Format of the barcode value. For example, <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#TEXT">TEXT</a></code>, <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#PRODUCT">PRODUCT</a></code>, <code><a href="../../../../../../../reference/com/google/android/gms/vision/barcode/Barcode.html#URL">URL</a></code>, etc.
 
- Note that this field may contain values not present in the current set
- of value format constants. When mapping this value to something else,
- it is advisable to have a default/fallback case.
+ <p>Note that this field may contain values not present in the current set of value format
+ constants. When mapping this value to something else, it is advisable to have a
+ default/fallback case.
 </p></div>
 
     
@@ -3039,8 +2961,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the barcode's axis-aligned bounding box.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the barcode's axis-aligned bounding box. </p></div>
 
     </div>
 </div>

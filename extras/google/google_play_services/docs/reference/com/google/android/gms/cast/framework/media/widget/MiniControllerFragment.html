@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -433,6 +443,8 @@ Doclava
 Summary:
 
 
+  <a href="#lattrs">XML Attrs</a>
+  
 
 
 
@@ -440,7 +452,8 @@ Summary:
 
 
 
-  <a href="#pubctors">Ctors</a>
+
+  &#124; <a href="#pubctors">Ctors</a>
   
 
 
@@ -544,7 +557,10 @@ Summary:
  album art, a <code><a href="../../../../../../../../../reference/android/widget/ProgressBar.html">ProgressBar</a></code> for playback progression, and three configurable control
  buttons. If developers want to use this fragment, they should add it to their layout XML file,
  and the <code><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/CastContext.html">CastContext</a></code> will automatically manage its state, and handle any user
- interactions.<p>
+ interactions.
+
+ <p>
+
  <pre>
  &lt;fragment
      android:id="@+id/cast_mini_controller"
@@ -554,27 +570,31 @@ Summary:
      android:visibility="gone"
      class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"&gt;
  </pre>
+
  The fragment can show up to three control buttons, from left to right. By default the fragment
  shows a play/pause toggle button. Developers can use the attribute <code>castControlButtons</code> to
  override what buttons to show. The list of supported control buttons are defined as ID resources:
- <p>
- <code>@id/cast_button_type_empty</code>: Not placing a button in this slot.<br>
+
+ <p><code>@id/cast_button_type_empty</code>: Not placing a button in this slot.<br>
  <code>@id/cast_button_type_custom</code>: A custom button.<br>
  <code>@id/cast_button_type_play_pause_toggle</code>: A button that toggles playback.<br>
  <code>@id/cast_button_type_skip_previous</code>: A button that skips to the previous item in the
  queue.<br>
  <code>@id/cast_button_type_skip_next</code>: A button that skips to the next item in the queue. <br>
- <code>@id/cast_button_type_rewind_30_seconds</code>: A button that rewinds the playback by 30
- seconds.<br>
+ <code>@id/cast_button_type_rewind_30_seconds</code>: A button that rewinds the playback by 30 seconds.
+ <br>
  <code>@id/cast_button_type_forward_30_seconds</code>: A button that skips forward the playback by 30
  seconds.<br>
  <code>@id/cast_button_type_mute_toggle</code>: A button that mutes and unmutes the remote receiver.
  <br>
  <code>@id/cast_button_type_closed_caption</code>: A button that opens a dialog to select text and
- audio tracks.<p>
- Here is an example of showing a rewind button, a play/pause toggle button and a forward button,
- from left to right:
+ audio tracks.
+
+ <p>Here is an example of showing a rewind button, a play/pause toggle button and a forward
+ button, from left to right:
+
  <p>
+
  <pre>
  &lt;array name="cast_mini_controller_control_buttons"&gt;
      &lt;item&gt;@id/cast_button_type_rewind_30_seconds&lt;/item&gt;
@@ -588,17 +608,23 @@ Summary:
      app:castControlButtons="@array/cast_mini_controller_control_buttons"
      class="com.google.android.gms.cast.framework.media.widget.MiniControllerFragment"&gt;
  </pre>
- The array must contain exactly three items, otherwise a runtime exception will be thrown.
- If you don't want to show a button in a slot, use <code>@id/cast_button_type_empty</code>.<p>
- The album art can be hidden by setting attribute <code>castShowImageThumbnail</code> to <code>false</code>:
+
+ The array must contain exactly three items, otherwise a runtime exception will be thrown. If you
+ don't want to show a button in a slot, use <code>@id/cast_button_type_empty</code>.
+
+ <p>The album art can be hidden by setting attribute <code>castShowImageThumbnail</code> to <code>false</code>:
+
  <p>
+
  <pre>
  ...
  app:castShowImageThumbnail="false"
  ...
  </pre>
- If the album art is shown, then the first control button will not be displayed.<p>
- The fragment will be visible when a media session starts, and will be invisible when a media
+
+ If the album art is shown, then the first control button will not be displayed.
+
+ <p>The fragment will be visible when a media session starts, and will be invisible when a media
  session ends.</p>
 
 
@@ -630,6 +656,170 @@ Summary:
 
 
 
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lattrs" class="jd-sumtable"><tr><th colspan="12">XML Attributes</th></tr>
+
+
+    <tr>
+        <td><nobr><em>Attribute Name</em></nobr></td>
+        <td><nobr><em>Related Method</em></nobr></td>
+        <td><nobr><em>Description</em></nobr></td>
+    </tr>
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castBackground">com.google.android.gms:castBackground</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castButtonColor">com.google.android.gms:castButtonColor</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castClosedCaptionsButtonDrawable">com.google.android.gms:castClosedCaptionsButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castControlButtons">com.google.android.gms:castControlButtons</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castForward30ButtonDrawable">com.google.android.gms:castForward30ButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castLargePauseButtonDrawable">com.google.android.gms:castLargePauseButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castLargePlayButtonDrawable">com.google.android.gms:castLargePlayButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castLargeStopButtonDrawable">com.google.android.gms:castLargeStopButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castMuteToggleButtonDrawable">com.google.android.gms:castMuteToggleButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castPauseButtonDrawable">com.google.android.gms:castPauseButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castPlayButtonDrawable">com.google.android.gms:castPlayButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castProgressBarColor">com.google.android.gms:castProgressBarColor</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castRewind30ButtonDrawable">com.google.android.gms:castRewind30ButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castShowImageThumbnail">com.google.android.gms:castShowImageThumbnail</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castSkipNextButtonDrawable">com.google.android.gms:castSkipNextButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castSkipPreviousButtonDrawable">com.google.android.gms:castSkipPreviousButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castStopButtonDrawable">com.google.android.gms:castStopButtonDrawable</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castSubtitleTextAppearance">com.google.android.gms:castSubtitleTextAppearance</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol"><a href="../../../../../../../../../reference/com/google/android/gms/cast/framework/media/widget/MiniControllerFragment.html#attr_com.google.android.gms:castTitleTextAppearance">com.google.android.gms:castTitleTextAppearance</a></td>
+        <td class="jd-linkcol">
+        </td>
+        <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
 
 
 
@@ -1530,13 +1720,28 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">onConfigurationChanged</span>(Configuration arg0)</nobr>
+        <span class="sympad">onAttachFragment</span>(Fragment arg0)</nobr>
         
   </td></tr>
 
 
 	 
     <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onConfigurationChanged</span>(Configuration arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1551,7 +1756,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1566,7 +1771,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1581,7 +1786,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1596,7 +1801,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1611,7 +1816,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1626,7 +1831,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1641,7 +1846,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1656,7 +1861,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1671,7 +1876,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1686,7 +1891,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1701,7 +1906,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1716,7 +1921,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1731,7 +1936,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1741,6 +1946,21 @@ From class
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">onLowMemory</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onMultiWindowModeChanged</span>(boolean arg0)</nobr>
         
   </td></tr>
 
@@ -1800,13 +2020,28 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">onPrepareOptionsMenu</span>(Menu arg0)</nobr>
+        <span class="sympad">onPictureInPictureModeChanged</span>(boolean arg0)</nobr>
         
   </td></tr>
 
 
 	 
     <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onPrepareOptionsMenu</span>(Menu arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1821,7 +2056,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1836,7 +2071,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1851,7 +2086,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1866,7 +2101,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1881,7 +2116,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1896,7 +2131,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1911,7 +2146,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1926,7 +2161,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             final
@@ -1941,7 +2176,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1956,7 +2191,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1971,7 +2206,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1986,7 +2221,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2001,7 +2236,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2016,7 +2251,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2031,7 +2266,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2046,7 +2281,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2061,7 +2296,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2076,7 +2311,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2091,7 +2326,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2106,7 +2341,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2121,7 +2356,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2136,7 +2371,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2151,7 +2386,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2166,7 +2401,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2181,7 +2416,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2196,7 +2431,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2211,7 +2446,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2226,7 +2461,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2241,7 +2476,7 @@ From class
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2256,7 +2491,7 @@ From class
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -2266,6 +2501,21 @@ From class
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">startActivityForResult</span>(Intent arg0, int arg1, Bundle arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">startIntentSenderForResult</span>(IntentSender arg0, int arg1, Intent arg2, int arg3, int arg4, int arg5, Bundle arg6)</nobr>
         
   </td></tr>
 
@@ -2703,6 +2953,374 @@ From interface
 
 
 <!-- XML Attributes -->
+
+
+<!-- ========= FIELD DETAIL ======== -->
+<h2>XML Attributes</h2>
+
+
+
+<A NAME="attr_com.google.android.gms:castBackground"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castBackground
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castButtonColor"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castButtonColor
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castClosedCaptionsButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castClosedCaptionsButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castControlButtons"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castControlButtons
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castForward30ButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castForward30ButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castLargePauseButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castLargePauseButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castLargePlayButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castLargePlayButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castLargeStopButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castLargeStopButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castMuteToggleButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castMuteToggleButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castPauseButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castPauseButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castPlayButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castPlayButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castProgressBarColor"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castProgressBarColor
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castRewind30ButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castRewind30ButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castShowImageThumbnail"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castShowImageThumbnail
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castSkipNextButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castSkipNextButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castSkipPreviousButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castSkipPreviousButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castStopButtonDrawable"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castStopButtonDrawable
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castSubtitleTextAppearance"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castSubtitleTextAppearance
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<A NAME="attr_com.google.android.gms:castTitleTextAppearance"></A>
+<div class="jd-details"> 
+    <h4 class="jd-details-title">com.google.android.gms:castTitleTextAppearance
+    </h4>
+    <div class="jd-details-descr">
+        
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+
+        <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Related Methods</h5>
+            <ul class="nolist">
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 
 
 <!-- Enum Values -->

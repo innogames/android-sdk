@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -492,14 +502,14 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">A human face detected in an image or video.<p>
+<p itemprop="articleBody">A human face detected in an image or video.
 
- It is important to note that all fields described here are with regards to the image that the
- detector has processed.  Many live apps that process images directly from the camera show the
- user a mirrored display of the actual image.<p>
+ <p>It is important to note that all fields described here are with regards to the image that the
+ detector has processed. Many live apps that process images directly from the camera show the user
+ a mirrored display of the actual image.
 
- All coordinate values are reported as absolute image coordinates.  That is, image position (0, 0)
- represents the upper-left corner of the image.
+ <p>All coordinate values are reported as absolute image coordinates. That is, image position (0,
+ 0) represents the upper-left corner of the image.
 </p>
 
 
@@ -1000,8 +1010,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The value that a probability is set to if it was not computed.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>The value that a probability is set to if it was not computed. </p></div>
 
     
         <div class="jd-tagdata">
@@ -1060,8 +1069,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the rotation of the face about the vertical axis of the image.  Positive euler y is
- when the face turns toward the right side of the of the image that is being processed.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the rotation of the face about the vertical axis of the image. Positive euler y is when
+ the face turns toward the right side of the of the image that is being processed.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the rotation of the face about the vertical axis of the image
@@ -1094,8 +1103,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the rotation of the face about the axis pointing out of the image.  Positive euler z
- is a counter-clockwise rotation within the image plane.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the rotation of the face about the axis pointing out of the image. Positive euler z is
+ a counter-clockwise rotation within the image plane.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the rotation of the face about the axis pointing out of the image
@@ -1128,9 +1137,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the height of the face region in pixels.  This is a rough estimate that is likely to
- be slightly larger than the exact bounds of the face and therefore may include some
- background.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the height of the face region in pixels. This is a rough estimate that is likely to be
+ slightly larger than the exact bounds of the face and therefore may include some background.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the height of the face in pixels
@@ -1163,8 +1171,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the face ID.  This can be used to track a Face over multiple
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/Frame.html">Frames</a></code>.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the face ID. This can be used to track a Face over multiple <code><a href="../../../../../../../reference/com/google/android/gms/vision/Frame.html">Frames</a></code>.
 </p></div>
 
     </div>
@@ -1193,12 +1200,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns a value between 0.0 and 1.0 giving a probability that the face's left eye is open.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a value between 0.0 and 1.0 giving a probability that the face's left eye is open.
 
- This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed.  The
- probability is not computed if eye open classification is not enabled via
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#LEFT_EYE">LEFT_EYE</a></code> landmark
- was not found.</p></div>
+ <p>This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed. The
+ probability is not computed if eye open classification is not enabled via <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#LEFT_EYE">LEFT_EYE</a></code> landmark was not
+ found.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the probability for the face's left eye being open
@@ -1232,12 +1238,10 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Returns a value between 0.0 and 1.0 giving a probability that the face's right eye is open.
- <p>
 
- This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed.  The
- probability is not computed if eye open classification is not enabled via
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#RIGHT_EYE">RIGHT_EYE</a></code> landmark
- was not found.</p></div>
+ <p>This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed. The
+ probability is not computed if eye open classification is not enabled via <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#RIGHT_EYE">RIGHT_EYE</a></code> landmark was not
+ found.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the probability for the face's right eye being open
@@ -1270,13 +1274,11 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns a value between 0.0 and 1.0 giving a probability that the face is smiling.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a value between 0.0 and 1.0 giving a probability that the face is smiling.
 
- This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed.  The
- probability is not computed if smile classification is not enabled via
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the required landmarks are not found.
- The <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#LEFT_MOUTH">LEFT_MOUTH</a></code>, <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#RIGHT_MOUTH">RIGHT_MOUTH</a></code>, and <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#NOSE_BASE">NOSE_BASE</a></code>
- landmarks are required to compute a smile probability.</p></div>
+ <p>This returns <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Face.html#UNCOMPUTED_PROBABILITY">UNCOMPUTED_PROBABILITY</a></code> if the probability was not computed. The
+ probability is not computed if smile classification is not enabled via <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setClassificationType(int)">setClassificationType(int)</a></code> or the required landmarks are not found. The <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#LEFT_MOUTH">LEFT_MOUTH</a></code>, <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#RIGHT_MOUTH">RIGHT_MOUTH</a></code>, and <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html#NOSE_BASE">NOSE_BASE</a></code> landmarks
+ are required to compute a smile probability.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the probability that the face is smiling
@@ -1309,10 +1311,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns a list of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html">Landmarks</a></code> (eyes, nose, etc.) found on the face.
- A landmark detector must be specified via <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setLandmarkType(int)">setLandmarkType(int)</a></code> to
- detect landmarks.  The landmark detector may not find all possible landmarks on any given
- face.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a list of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/Landmark.html">Landmarks</a></code> (eyes, nose, etc.) found on the face. A landmark
+ detector must be specified via <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setLandmarkType(int)">setLandmarkType(int)</a></code> to detect
+ landmarks. The landmark detector may not find all possible landmarks on any given face.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>a list of landmarks found on the face
@@ -1345,8 +1346,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the top left position of the face within the image.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the top left position of the face within the image. </p></div>
 
     </div>
 </div>
@@ -1374,9 +1374,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the width of the face region in pixels.  This is a rough estimate that is likely to
- be slightly larger than the exact bounds of the face and therefore may include some
- background.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the width of the face region in pixels. This is a rough estimate that is likely to be
+ slightly larger than the exact bounds of the face and therefore may include some background.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the width of the face in pixels

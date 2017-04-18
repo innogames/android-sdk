@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -647,8 +657,25 @@ Summary:
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PLUS_LOGIN">PLUS_LOGIN</a></td>
-        <td class="jd-descrcol" width="100%">OAuth 2.0 scope for accessing the user's name, basic profile info, list of people in the
- user's circles, and writing app activities to Google.</td>
+        <td class="jd-descrcol" width="100%"><em>
+      This constant is deprecated.
+    We recommend switching to <code><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PROFILE">PROFILE</a></code> scope to get the one-tap sign-in
+ experience. See <a href="https://developers.google.com/identity/sign-in/android/people">
+ Getting Profile Information</a>. Your app will get much higher sign-in completion rate by
+ switching to profile scopes because of the streamlined user experience. And your existing
+ users with PLUS_LOGIN grant will not be asked to sign-in again.
+ <p>
+ If you really need user's age range and locale information (which is the only additional
+ information you can get from PLUS_LOGIN as of September 2016), use below scopes in addition
+ to PROFILE:
+ <ul>
+     <li>https://www.googleapis.com/auth/profile.agerange.read
+     <li>https://www.googleapis.com/auth/profile.language.read
+ </ul>
+
+ See also <a href="https://developers.google.com/+/mobile/android/api-deprecation">Android
+ Plus API Deprecation Notes</a>.
+</em></td>
     </tr>
     
     
@@ -660,13 +687,6 @@ Summary:
     
     
     <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PLUS_MOMENTS">PLUS_MOMENTS</a></td>
-        <td class="jd-descrcol" width="100%">Scope for writing app activities to Google.</td>
-    </tr>
-    
-    
-    <tr class=" api apilevel-" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PROFILE">PROFILE</a></td>
         <td class="jd-descrcol" width="100%">OAuth 2.0 scope for accessing user's basic profile information.</td>
@@ -1478,18 +1498,34 @@ From class
 
       </div>
     <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>OAuth 2.0 scope for accessing the user's name, basic profile info, list of people in the
- user's circles, and writing app activities to Google.
+      <p>
+  <p class="caution"><strong>
+      This constant is deprecated.</strong><br/>
+    We recommend switching to <code><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PROFILE">PROFILE</a></code> scope to get the one-tap sign-in
+ experience. See <a href="https://developers.google.com/identity/sign-in/android/people">
+ Getting Profile Information</a>. Your app will get much higher sign-in completion rate by
+ switching to profile scopes because of the streamlined user experience. And your existing
+ users with PLUS_LOGIN grant will not be asked to sign-in again.
+ <p>
+ If you really need user's age range and locale information (which is the only additional
+ information you can get from PLUS_LOGIN as of September 2016), use below scopes in addition
+ to PROFILE:
+ <ul>
+     <li>https://www.googleapis.com/auth/profile.agerange.read
+     <li>https://www.googleapis.com/auth/profile.language.read
+ </ul>
+
+ See also <a href="https://developers.google.com/+/mobile/android/api-deprecation">Android
+ Plus API Deprecation Notes</a>.
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p>OAuth 2.0 scope for accessing the user's name, basic profile info and Google+ profile info.
 
  <p>When using this scope, your app will have access to:</p>
  <ul>
  <li>the user's full name, profile picture, Google+ profile ID, age range, and language</li>
- <li>people the user has circled, represented as a list of public profiles</li>
  <li>any other publicly available information on the user's Google+ profile</li>
- <li>write app activities (moments) to Google.</li>
- </ul>
-</p></div>
+ </ul></p></div>
 
     
         <div class="jd-tagdata">
@@ -1542,46 +1578,6 @@ From class
         <span>
             
                 "https://www.googleapis.com/auth/plus.me"
-            
-        </span>
-        </div>
-    
-    </div>
-</div>
-
-
-
-<A NAME="PLUS_MOMENTS"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        String
-      </span>
-        PLUS_MOMENTS
-    </h4>
-      <div class="api-level">
-        
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Scope for writing app activities to Google.
- <p/>
- This scope is not necessary if the <code><a href="../../../../../../reference/com/google/android/gms/common/Scopes.html#PLUS_LOGIN">PLUS_LOGIN</a></code> scope is already used.
-</p></div>
-
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "https://www.googleapis.com/auth/plus.moments.write"
             
         </span>
         </div>

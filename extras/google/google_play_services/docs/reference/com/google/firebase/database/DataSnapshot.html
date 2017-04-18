@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -514,17 +524,12 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">A DataSnapshot instance contains data from a Firebase Database location. Any time you read
- Database data, you receive the data as a DataSnapshot.
- <br><br>
- DataSnapshots are passed to the methods in listeners that you attach with
- <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addValueEventListener(com.google.firebase.database.ValueEventListener)">addValueEventListener(ValueEventListener)</a></code>,
- <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addChildEventListener(com.google.firebase.database.ChildEventListener)">addChildEventListener(ChildEventListener)</a></code>, or
- <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addListenerForSingleValueEvent(com.google.firebase.database.ValueEventListener)">addListenerForSingleValueEvent(ValueEventListener)</a></code>.
- <br><br>
- They are efficiently-generated immutable copies of the data at a Firebase Database location.
- They can't be modified and will never change. To modify data at a location,
- use a <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></code> reference
- (e.g. with <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#setValue(java.lang.Object)">setValue(Object)</a></code>).
+ Database data, you receive the data as a DataSnapshot. <br>
+ <br>
+ DataSnapshots are passed to the methods in listeners that you attach with <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addValueEventListener(com.google.firebase.database.ValueEventListener)">addValueEventListener(ValueEventListener)</a></code>, <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addChildEventListener(com.google.firebase.database.ChildEventListener)">addChildEventListener(ChildEventListener)</a></code>, or <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addListenerForSingleValueEvent(com.google.firebase.database.ValueEventListener)">addListenerForSingleValueEvent(ValueEventListener)</a></code>. <br>
+ <br>
+ They are efficiently-generated immutable copies of the data at a Firebase Database location. They
+ can't be modified and will never change. To modify data at a location, use a <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></code> reference (e.g. with <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#setValue(java.lang.Object)">setValue(Object)</a></code>).
 </p>
 
 
@@ -729,7 +734,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/DataSnapshot.html#getValue(com.google.firebase.database.GenericTypeIndicator<T>)">getValue</a></span>(<a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a>&lt;T&gt; t)</nobr>
         
-        <div class="jd-descrdiv">Due to the way that Java implements generics, it takes an extra step to get back a properly-typed Collection.</div>
+        <div class="jd-descrdiv">Due to the way that Java implements generics, it takes an extra step to get back a
+ properly-typed Collection.</div>
   
   </td></tr>
 
@@ -763,7 +769,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/DataSnapshot.html#getValue(java.lang.Class<T>)">getValue</a></span>(Class&lt;T&gt; valueType)</nobr>
         
-        <div class="jd-descrdiv">This method is used to marshall the data contained in this snapshot into a class of your choosing.</div>
+        <div class="jd-descrdiv">This method is used to marshall the data contained in this snapshot into a class of your
+ choosing.</div>
   
   </td></tr>
 
@@ -1086,10 +1093,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Get a DataSnapshot for the location at the specified relative path.
- The relative path can either be a simple child key (e.g. 'fred')
- or a deeper slash-separated path (e.g. 'fred/name/first'). If the child
- location has no data, an empty DataSnapshot is returned.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Get a DataSnapshot for the location at the specified relative path. The relative path can
+ either be a simple child key (e.g. 'fred') or a deeper slash-separated path (e.g.
+ 'fred/name/first'). If the child location has no data, an empty DataSnapshot is returned.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1164,9 +1170,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Gives access to all of the immediate children of this snapshot.
- Can be used in native for loops:
- <code>
+  <div class="jd-tagdata jd-tagdescr"><p>Gives access to all of the immediate children of this snapshot. Can be used in native for
+ loops: <code>
  <br>    for (DataSnapshot child : parent.getChildren()) {
  <br>    &nbsp;&nbsp;&nbsp;&nbsp;...
  <br>    }
@@ -1206,8 +1211,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The number of immediate children in the this snapshot
-</li></ul>
+      <ul class="nolist"><li>The number of immediate children in the this snapshot </li></ul>
   </div>
 
     </div>
@@ -1239,8 +1243,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>the key name for the source location of this snapshot
-</li></ul>
+      <ul class="nolist"><li>the key name for the source location of this snapshot </li></ul>
   </div>
 
     </div>
@@ -1269,12 +1272,14 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the priority of the data contained in this snapshot as a native type.
- Possible return types:
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the priority of the data contained in this snapshot as a native type. Possible return
+ types:
+
  <ul>
-     <li>Double</li>
-     <li>String</li>
+   <li>Double
+   <li>String
  </ul>
+
  Note that null is also allowed</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -1341,23 +1346,24 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this snapshot as native types.
- The possible types returned are:
- <ul>
-  <li>Boolean</li>
-  <li>String</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
- </ul>
- This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code>
- in the above list is given by the same list. These types correspond to the
- types available in JSON.
+  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this snapshot as native types. The possible types
+ returned are:
 
- If useExportFormat is set to true, priority information will be included in the output.
- Priority information shows up as a .priority key in a map. For data that would not otherwise
- be a map, the map will also include a .value key with the data.</p></div>
+ <ul>
+   <li>Boolean
+   <li>String
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
+ </ul>
+
+ This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code> in the above list is
+ given by the same list. These types correspond to the types available in JSON.
+
+ <p>If useExportFormat is set to true, priority information will be included in the output.
+ Priority information shows up as a .priority key in a map. For data that would not otherwise be
+ a map, the map will also include a .value key with the data.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1399,12 +1405,13 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Due to the way that Java implements generics, it takes an extra step to get back a properly-typed Collection.
- So, in the case where you want a <code><a href="../../../../../reference/java/util/List.html">List</a></code> of Message instances, you will need to do something like
- the following:
+  <div class="jd-tagdata jd-tagdescr"><p>Due to the way that Java implements generics, it takes an extra step to get back a
+ properly-typed Collection. So, in the case where you want a <code><a href="../../../../../reference/java/util/List.html">List</a></code> of Message
+ instances, you will need to do something like the following:
 
  <pre><code>
-     GenericTypeIndicator&lt;List&lt;Message&gt;&gt; t = new GenericTypeIndicator&lt;List&lt;Message&gt;&gt;() {};
+     GenericTypeIndicator&lt;List&lt;Message&gt;&gt; t =
+         new GenericTypeIndicator&lt;List&lt;Message&gt;&gt;() {};
      List&lt;Message&gt; messages = snapshot.getValue(t);
  </code></pre>
 
@@ -1414,7 +1421,8 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>t</td>
-          <td>A subclass of <code><a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a></code> indicating the type of generic collection to be returned.</td>
+          <td>A subclass of <code><a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a></code> indicating the type of generic collection
+     to be returned.</td>
         </tr>
       </table>
   </div>
@@ -1450,19 +1458,20 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this snapshot as native types.
- The possible types returned are:
+  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this snapshot as native types. The possible types
+ returned are:
+
  <ul>
-  <li>Boolean</li>
-  <li>String</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>String
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code>
- in the above list is given by the same list. These types correspond to the
- types available in JSON.</p></div>
+
+ This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code> in the above list is
+ given by the same list. These types correspond to the types available in JSON.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The data contained in this snapshot as native types
@@ -1495,16 +1504,18 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is used to marshall the data contained in this snapshot into a class of your choosing. The class
- must fit 2 simple constraints:
+  <div class="jd-tagdata jd-tagdescr"><p>This method is used to marshall the data contained in this snapshot into a class of your
+ choosing. The class must fit 2 simple constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
+
  An example class might look like:
+
  <pre><code>
      class Message {
          private String author;

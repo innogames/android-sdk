@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -454,8 +464,7 @@ Doclava
 <p>
   <p class="caution"><strong>
       This interface is deprecated.</strong><br/>
-    Use <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#start(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">start(GoogleApiClient, Action)</a></code> and
-             <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#end(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">end(GoogleApiClient, Action)</a></code>.
+    Use <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#start(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">start(GoogleApiClient, Action)</a></code> and <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#end(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">end(GoogleApiClient, Action)</a></code>.
 
   </p>
 
@@ -626,15 +635,15 @@ Doclava
       <table class="jd-tagtable">
         <tr>
           <th>apiClient</td>
-          <td>The <code><a href="../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.html">GoogleApiClient</a></code> configured to use the
- <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndex.html#API">API</a></code>. The client should be connecting or connected.</td>
+          <td>The <code><a href="../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.html">GoogleApiClient</a></code> configured to use the <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndex.html#API">API</a></code>. The
+     client should be connecting or connected.</td>
         </tr>
       </table>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The <code><a href="../../../../../../reference/com/google/android/gms/common/api/PendingResult.html">PendingResult</a></code> which can optionally be used to determine if the call
- succeeded.
+     succeeded.
 </li></ul>
   </div>
 
@@ -667,8 +676,7 @@ Doclava
   <div class="jd-tagdata jd-tagdescr"><p>Represents the result of a call to the <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#action(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">action(GoogleApiClient, Action)</a></code> API.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The <code><a href="../../../../../../reference/com/google/android/gms/common/api/PendingResult.html">PendingResult</a></code> which can optionally be used to determine if the
- <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#action(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">action(GoogleApiClient, Action)</a></code> method succeeded.
+      <ul class="nolist"><li>The <code><a href="../../../../../../reference/com/google/android/gms/common/api/PendingResult.html">PendingResult</a></code> which can optionally be used to determine if the <code><a href="../../../../../../reference/com/google/android/gms/appindexing/AppIndexApi.html#action(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.appindexing.Action)">action(GoogleApiClient, Action)</a></code> method succeeded.
 </li></ul>
   </div>
 

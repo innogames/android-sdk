@@ -1,3 +1,4 @@
+com.google.android.gms
 com.google.android.gms.actions
 com.google.android.gms.ads
 com.google.android.gms.ads.doubleclick
@@ -59,6 +60,7 @@ com.google.android.gms.gcm
 com.google.android.gms.identity.intents
 com.google.android.gms.identity.intents.model
 com.google.android.gms.iid
+com.google.android.gms.instantapps
 com.google.android.gms.location
 com.google.android.gms.location.places
 com.google.android.gms.location.places.ui
@@ -68,6 +70,7 @@ com.google.android.gms.measurement
 com.google.android.gms.nearby
 com.google.android.gms.nearby.connection
 com.google.android.gms.nearby.messages
+com.google.android.gms.nearby.messages.audio
 com.google.android.gms.panorama
 com.google.android.gms.plus
 com.google.android.gms.plus.model.people
@@ -85,6 +88,8 @@ com.google.android.gms.wallet.fragment
 com.google.android.gms.wearable
 com.google.firebase
 com.google.firebase.analytics
+com.google.firebase.appindexing
+com.google.firebase.appindexing.builders
 com.google.firebase.auth
 com.google.firebase.crash
 com.google.firebase.database

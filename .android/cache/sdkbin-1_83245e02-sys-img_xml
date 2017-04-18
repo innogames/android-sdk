@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdk:sdk-sys-img xmlns:sdk="http://schemas.android.com/sdk/android/sys-img/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<!--Generated on 2016-12-12 17:23:04.905323 with ADRT.-->
+	<!--Generated on 2017-04-03 14:52:41.035601 with ADRT.-->
 	<sdk:license id="android-sdk-license" type="text">Terms and Conditions
 
 This is the Android Software Development Kit License Agreement
@@ -477,16 +477,16 @@ ANY PRE-RELEASE MATERIALS ARE NON-QUALIFIED AND, AS SUCH, ARE PROVIDED â€œAS ISâ
 		<sdk:tag-display>Android TV</sdk:tag-display>
 	</sdk:system-image>
 	<sdk:system-image>
-		<!--Generated from bid:3512684, branch:git_mnc-emu-release-->
+		<!--Generated from bid:3738108, branch:git_mnc-emu-release-->
 		<sdk:api-level>23</sdk:api-level>
 		<sdk:description>Android TV Intel x86 Atom System Image</sdk:description>
-		<sdk:revision>8</sdk:revision>
+		<sdk:revision>9</sdk:revision>
 		<sdk:archives>
 			<sdk:archive>
-				<!--Built on: Mon Nov 28 07:52:31 2016.-->
-				<sdk:size>326611581</sdk:size>
-				<sdk:checksum type="sha1">1c1e8d2db8319665a438e3df19930b02192f5623</sdk:checksum>
-				<sdk:url>x86-23_r08.zip</sdk:url>
+				<!--Built on: Wed Feb 15 13:45:20 2017.-->
+				<sdk:size>329872576</sdk:size>
+				<sdk:checksum type="sha1">c2a56116db217acca7170df313020ae2906127eb</sdk:checksum>
+				<sdk:url>x86-23_r09.zip</sdk:url>
 			</sdk:archive>
 		</sdk:archives>
 		<sdk:uses-license ref="android-sdk-license"/>
@@ -513,37 +513,37 @@ ANY PRE-RELEASE MATERIALS ARE NON-QUALIFIED AND, AS SUCH, ARE PROVIDED â€œAS ISâ
 		<sdk:tag-display>Android TV</sdk:tag-display>
 	</sdk:system-image>
 	<sdk:system-image>
-		<!--Generated from bid:3513876, branch:git_nyc-emu-release-->
+		<!--Generated from bid:3761695, branch:git_nyc-emu-release-->
 		<sdk:api-level>24</sdk:api-level>
 		<sdk:description>Android TV Intel x86 Atom System Image</sdk:description>
-		<sdk:revision>9</sdk:revision>
+		<sdk:revision>10</sdk:revision>
 		<sdk:archives>
 			<sdk:archive>
-				<!--Built on: Mon Nov 28 07:52:56 2016.-->
-				<sdk:size>379626742</sdk:size>
-				<sdk:checksum type="sha1">fdb3199d411b8e692297618dcf1e768394afa535</sdk:checksum>
-				<sdk:url>x86-24_r09.zip</sdk:url>
+				<!--Built on: Thu Feb 23 16:23:53 2017.-->
+				<sdk:size>381599153</sdk:size>
+				<sdk:checksum type="sha1">bd8e73f46d1ad0d8db20e53280fb673f7937bbce</sdk:checksum>
+				<sdk:url>x86-24_r10.zip</sdk:url>
 			</sdk:archive>
 		</sdk:archives>
-		<sdk:uses-license ref="android-sdk-preview-license"/>
+		<sdk:uses-license ref="android-sdk-license"/>
 		<sdk:abi>x86</sdk:abi>
 		<sdk:tag-id>android-tv</sdk:tag-id>
 		<sdk:tag-display>Android TV</sdk:tag-display>
 	</sdk:system-image>
 	<sdk:system-image>
-		<!--Generated from bid:3479480, branch:git_nyc-preview-release-->
+		<!--Generated from bid:3756122, branch:git_nyc-mr1-emu-release-->
 		<sdk:api-level>25</sdk:api-level>
 		<sdk:description>Android TV Intel x86 Atom System Image</sdk:description>
-		<sdk:revision>2</sdk:revision>
+		<sdk:revision>3</sdk:revision>
 		<sdk:archives>
 			<sdk:archive>
-				<!--Built on: Mon Nov 14 16:44:06 2016.-->
-				<sdk:size>392498265</sdk:size>
-				<sdk:checksum type="sha1">98ce693deff149428abd2196203ceb4d5e05b03e</sdk:checksum>
-				<sdk:url>x86-25_r02.zip</sdk:url>
+				<!--Built on: Wed Feb 22 11:01:24 2017.-->
+				<sdk:size>395505229</sdk:size>
+				<sdk:checksum type="sha1">535e2655d569f1a6e18f334baf7ad7492652f7ef</sdk:checksum>
+				<sdk:url>x86-25_r03.zip</sdk:url>
 			</sdk:archive>
 		</sdk:archives>
-		<sdk:uses-license ref="android-sdk-preview-license"/>
+		<sdk:uses-license ref="android-sdk-license"/>
 		<sdk:abi>x86</sdk:abi>
 		<sdk:tag-id>android-tv</sdk:tag-id>
 		<sdk:tag-display>Android TV</sdk:tag-display>

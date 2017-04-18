@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -561,22 +571,24 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Detector is the base class for implementing specific detector instances, such as a barcode
- detector or face detector.  A detector receives a <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html">Frame</a></code> as input, and
- produces a number of detected items as output.  The Detector implementation is generic,
- parameterized by T, the type of the detected items.<p>
+ detector or face detector. A detector receives a <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html">Frame</a></code> as input, and produces a number of
+ detected items as output. The Detector implementation is generic, parameterized by T, the type of
+ the detected items.
 
- A detector may be used to run detection synchronously given a frame, like this:
+ <p>A detector may be used to run detection synchronously given a frame, like this:
 
  <pre><code>SparseArray&lt;Foo&gt; foos = detector.detect(frame);
  </code></pre>
 
  Alternatively, a detector may also be used within a pipeline structure, in conjunction with
  sources (e.g., <code><a href="../../../../../../reference/com/google/android/gms/vision/CameraSource.html">CameraSource</a></code>) and processors (e.g., <code><a href="../../../../../../reference/com/google/android/gms/vision/MultiProcessor.html">MultiProcessor</a></code>), enabling you
- to construct fairly advanced detection pipelines with minimal coding.<p>
+ to construct fairly advanced detection pipelines with minimal coding.
 
- For example, the code below creates and starts a pipeline that continuously receives preview
+ <p>For example, the code below creates and starts a pipeline that continuously receives preview
  frames from a camera source, runs detection on the frames, and manages tracking an individual
- detected item over time via a developer-defined "FooTracker" instance.<p>
+ detected item over time via a developer-defined "FooTracker" instance.
+
+ <p>
 
  <pre><code>detector.setProcessor(
    new MyFooFocusingProcessor(
@@ -645,8 +657,8 @@ Summary:
         
         interface</nobr></td>
       <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Processor.html">Detector.Processor</a>&lt;T&gt;</td>
-      <td class="jd-descrcol" width="100%">Interface for defining a post-processing action to be executed for each detection, when
- using the detector as part of a pipeline (see the class level docs above).&nbsp;</td>
+      <td class="jd-descrcol" width="100%">Interface for defining a post-processing action to be executed for each detection, when using
+ the detector as part of a pipeline (see the class level docs above).&nbsp;</td>
     </tr>
     
     
@@ -736,8 +748,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#isOperational()">isOperational</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in
- order to do detection.</div>
+        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in order
+ to do detection.</div>
   
   </td></tr>
 
@@ -1116,14 +1128,15 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Analyzes the supplied frame to find target item instances (e.g., the face detector finds
- faces). Subclasses implement this method for calling specific detection code, returning
- result objects with associated tracking ID mappings.
+ faces). Subclasses implement this method for calling specific detection code, returning result
+ objects with associated tracking ID mappings.
+
  <p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>mapping of int to detected object, where the int domain represents the ID of the
-   associated item.  If tracking is enabled, as the same object is detected in consecutive
-   frames, the detector will return the same ID for that item.
+     associated item. If tracking is enabled, as the same object is detected in consecutive
+     frames, the detector will return the same ID for that item.
 </li></ul>
   </div>
 
@@ -1153,23 +1166,21 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Indicates whether the detector has all of the required dependencies available locally in
- order to do detection.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Indicates whether the detector has all of the required dependencies available locally in order
+ to do detection.
 
- When an app is first installed, it may be necessary to download required files.  If this
- returns false, those files are not yet available.  Usually this download is taken care of at
- application install time, but this is not guaranteed.  In some cases the download may have
- been delayed. <p>
+ <p>When an app is first installed, it may be necessary to download required files. If this
+ returns false, those files are not yet available. Usually this download is taken care of at
+ application install time, but this is not guaranteed. In some cases the download may have been
+ delayed.
 
- If your code has added a processor, an indication of the detector operational state is also
- indicated with the
- <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#detectorIsOperational()">detectorIsOperational()</a></code> method.
- You can check this in your app as it processes detection results, and can convey this state
- to the user if appropriate.</p></div>
+ <p>If your code has added a processor, an indication of the detector operational state is also
+ indicated with the <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#detectorIsOperational()">detectorIsOperational()</a></code> method. You can
+ check this in your app as it processes detection results, and can convey this state to the user
+ if appropriate.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>true if the detector is operational, false if the dependency download is in
- progress
+      <ul class="nolist"><li>true if the detector is operational, false if the dependency download is in progress
 </li></ul>
   </div>
 
@@ -1200,10 +1211,10 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Pipeline method (see class level documentation above) for receiving frames for detection.
- Detection results are forwarded onto a processor that was previously registered with this
- class (see <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#setProcessor(com.google.android.gms.vision.Detector.Processor<T>)">setProcessor(Detector.Processor<T>)</a></code>).<p>
+ Detection results are forwarded onto a processor that was previously registered with this class
+ (see <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#setProcessor(com.google.android.gms.vision.Detector.Processor<T>)">setProcessor(Detector.Processor<T>)</a></code>).
 
- Alternatively, if you are just looking to synchronously run the detector on a single frame,
+ <p>Alternatively, if you are just looking to synchronously run the detector on a single frame,
  use <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#detect(com.google.android.gms.vision.Frame)">detect(Frame)</a></code> instead.
 </p></div>
 
@@ -1233,8 +1244,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Shuts down the detector, releasing any underlying resources.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Shuts down the detector, releasing any underlying resources. </p></div>
 
     </div>
 </div>
@@ -1264,18 +1274,18 @@ From class
       
   <div class="jd-tagdata jd-tagdescr"><p>Sets the ID of the detected item in which to exclusively track in future use of the detector.
  This can be used to avoid unnecessary work in detecting all items in future frames, when it's
- only necessary to receive results for a specific item.  After setting this ID, the detector
- may only return results for the associated tracked item. When that item is no longer present
- in a frame, the detector will revert back to detecting all items.
- <p>
- Optionally, subclasses may override this to support optimized tracking.</p></div>
+ only necessary to receive results for a specific item. After setting this ID, the detector may
+ only return results for the associated tracked item. When that item is no longer present in a
+ frame, the detector will revert back to detecting all items.
+
+ <p>Optionally, subclasses may override this to support optimized tracking.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>id</td>
           <td>tracking ID to become the focus for future detections. This is a mapping ID as
-   returned from <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#detect(com.google.android.gms.vision.Frame)">detect(Frame)</a></code> or received from <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#getDetectedItems()">getDetectedItems()</a></code>.
+     returned from <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#detect(com.google.android.gms.vision.Frame)">detect(Frame)</a></code> or received from <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#getDetectedItems()">getDetectedItems()</a></code>.
 </td>
         </tr>
       </table>
@@ -1308,7 +1318,7 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Pipeline method (see class level documentation above) which sets the <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Processor.html">Detector.Processor</a></code>
- instance.  This is used in creating the pipeline structure, associating a post-processor with
+ instance. This is used in creating the pipeline structure, associating a post-processor with
  the detector.
 </p></div>
 

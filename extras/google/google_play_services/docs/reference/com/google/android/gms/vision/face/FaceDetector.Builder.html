@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -492,8 +502,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Builder for creating face detector instances.
-</p>
+<p itemprop="articleBody">Builder for creating face detector instances. </p>
 
 
 
@@ -643,8 +652,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setMinFaceSize(float)">setMinFaceSize</a></span>(float proportionalMinFaceSize)</nobr>
         
-        <div class="jd-descrdiv">Sets the smallest desired face size, expressed as a proportion of the width of the head
- to the image width.</div>
+        <div class="jd-descrdiv">Sets the smallest desired face size, expressed as a proportion of the width of the head to
+ the image width.</div>
   
   </td></tr>
 
@@ -964,8 +973,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a face detector builder with the supplied context.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a face detector builder with the supplied context. </p></div>
 
     </div>
 </div>
@@ -1009,6 +1017,12 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Builds a face detector instance.
+
+ <p>Note that this method may cause blocking disk reads and should not be called on an
+ application's main thread. To avoid blocking the main thread, consider moving Detector
+ construction to a background thread using <code><a href="../../../../../../../reference/android/os/AsyncTask.html">AsyncTask</a></code>. Enable
+ <code><a href="../../../../../../../reference/android/os/StrictMode.html">StrictMode</a></code> to automatically detect blocking operations on the main
+ thread.
 </p></div>
 
     </div>
@@ -1038,14 +1052,13 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Indicates whether to run additional classifiers for characterizing attributes such as
- “smiling” and “eyes open”.  Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_CLASSIFICATIONS">NO_CLASSIFICATIONS</a></code></p></div>
+ “smiling” and “eyes open”. Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_CLASSIFICATIONS">NO_CLASSIFICATIONS</a></code></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>classificationType</td>
-          <td>the subset of classifiers to use.  One of
-   <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_CLASSIFICATIONS">NO_CLASSIFICATIONS</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ALL_CLASSIFICATIONS">ALL_CLASSIFICATIONS</a></code>.</td>
+          <td>the subset of classifiers to use. One of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_CLASSIFICATIONS">NO_CLASSIFICATIONS</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ALL_CLASSIFICATIONS">ALL_CLASSIFICATIONS</a></code>.</td>
         </tr>
       </table>
   </div>
@@ -1086,17 +1099,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets whether to detect no landmarks or all landmarks.  Processing time increases as the
- number of landmarks to search for increases, so detecting all landmarks will increase the
- overall detection time.  Detecting landmarks can improve pose estimation.
- Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_LANDMARKS">NO_LANDMARKS</a></code><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets whether to detect no landmarks or all landmarks. Processing time increases as the number
+ of landmarks to search for increases, so detecting all landmarks will increase the overall
+ detection time. Detecting landmarks can improve pose estimation. Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_LANDMARKS">NO_LANDMARKS</a></code>
+
+ <p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>landmarkType</td>
-          <td>the type of landmark detector to use.  One of
-   <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_LANDMARKS">NO_LANDMARKS</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ALL_LANDMARKS">ALL_LANDMARKS</a></code>.</td>
+          <td>the type of landmark detector to use. One of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#NO_LANDMARKS">NO_LANDMARKS</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ALL_LANDMARKS">ALL_LANDMARKS</a></code>.</td>
         </tr>
       </table>
   </div>
@@ -1137,29 +1150,27 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Sets the smallest desired face size, expressed as a proportion of the width of the head
- to the image width.  For example, if a value of 0.1 is specified then the smallest face
- to search for is roughly 10% of the width of the image being searched.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the smallest desired face size, expressed as a proportion of the width of the head to
+ the image width. For example, if a value of 0.1 is specified then the smallest face to search
+ for is roughly 10% of the width of the image being searched.
 
- Setting the min face size is a performance vs. accuracy trade-off: setting the face
- size smaller will enable the detector to find smaller faces but detection will take
- longer; setting the face size larger will exclude smaller faces but will run faster.<p>
+ <p>Setting the min face size is a performance vs. accuracy trade-off: setting the face size
+ smaller will enable the detector to find smaller faces but detection will take longer;
+ setting the face size larger will exclude smaller faces but will run faster.
 
- This is not a hard limit on face size; the detector may find faces slightly smaller than
- specified.<p>
+ <p>This is not a hard limit on face size; the detector may find faces slightly smaller than
+ specified.
 
- By default, this value is inferred by the
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setProminentFaceOnly(boolean)">prominentFaceOnly</a></code> setting.  If unspecified, the
- inferred face size is 0.1 (prominentFaceOnly == false) or 0.35
- (prominentFaceOnly == true).</p></div>
+ <p>By default, this value is inferred by the <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.Builder.html#setProminentFaceOnly(boolean)">prominentFaceOnly</a></code> setting. If unspecified, the inferred face size is 0.1 (prominentFaceOnly
+ == false) or 0.35 (prominentFaceOnly == true).</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>proportionalMinFaceSize</td>
-          <td>the smallest head size to search for relative to the size
-        of the image, in the range of 0.0 and 1.0.  For example, a setting of 0.5 would
-        indicate that detected faces need to fill at least half of the image width.</td>
+          <td>the smallest head size to search for relative to the size of
+     the image, in the range of 0.0 and 1.0. For example, a setting of 0.5 would indicate that
+     detected faces need to fill at least half of the image width.</td>
         </tr>
       </table>
   </div>
@@ -1201,16 +1212,17 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Extended option for controlling additional accuracy / speed trade-offs in performing face
- detection.  In general, choosing the more accurate mode will generally result in longer
+ detection. In general, choosing the more accurate mode will generally result in longer
  runtime, whereas choosing the faster mode will generally result in detecting fewer faces.
- Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#FAST_MODE">FAST_MODE</a></code><p></p></div>
+ Default: <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#FAST_MODE">FAST_MODE</a></code>
+
+ <p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>mode</td>
-          <td>fast/accurate trade-off mode.  One of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#FAST_MODE">FAST_MODE</a></code> or
-   <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ACCURATE_MODE">ACCURATE_MODE</a></code>.</td>
+          <td>fast/accurate trade-off mode. One of <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#FAST_MODE">FAST_MODE</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/face/FaceDetector.html#ACCURATE_MODE">ACCURATE_MODE</a></code>.</td>
         </tr>
       </table>
   </div>
@@ -1252,10 +1264,10 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Indicates whether to detect all faces, or to only detect the most prominent face (i.e., a
- large face that is most central within the frame).  Default: false<p>
+ large face that is most central within the frame). Default: false
 
- By default, there is no limit in the number of faces detected.  Setting this value to
- true can increase the speed of the detector since the detector does not need to search
+ <p>By default, there is no limit in the number of faces detected. Setting this value to true
+ can increase the speed of the detector since the detector does not need to search
  exhaustively for all faces.
 </p></div>
 
@@ -1286,13 +1298,12 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Enables or disables face tracking, which will maintain a consistent ID for each face when
- processing consecutive frames.  Default: true<p>
+ processing consecutive frames. Default: true
 
- If your code uses a <code><a href="../../../../../../../reference/com/google/android/gms/vision/MultiProcessor.html">MultiProcessor</a></code> or
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/FocusingProcessor.html">FocusingProcessor</a></code> instance, tracking must be
- enabled.  Having tracking enabled is also recommended for handling live video.<p>
+ <p>If your code uses a <code><a href="../../../../../../../reference/com/google/android/gms/vision/MultiProcessor.html">MultiProcessor</a></code> or <code><a href="../../../../../../../reference/com/google/android/gms/vision/FocusingProcessor.html">FocusingProcessor</a></code> instance, tracking must be enabled. Having
+ tracking enabled is also recommended for handling live video.
 
- Tracking should be disabled for handling a series of non-consecutive still images.
+ <p>Tracking should be disabled for handling a series of non-consecutive still images.
 </p></div>
 
     </div>

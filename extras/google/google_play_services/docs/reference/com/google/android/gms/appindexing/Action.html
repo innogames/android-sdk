@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -522,9 +532,8 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Represents an action performed by a user.
- <p>
- To use this API, add the following to your <code><a href="../../../../../../reference/android/app/Activity.html">Activity</a></code>:
- <pre>
+
+ <p>To use this API, add the following to your <code><a href="../../../../../../reference/android/app/Activity.html">Activity</a></code>: <pre>
  <code>Action action = Action.newAction(actionType, title, appUri);
  AppIndex.AppIndexApi.start(mGoogleApiClient, action);
  </code></pre>
@@ -639,8 +648,8 @@ Summary:
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/appindexing/Action.html#TYPE_COMMUNICATE">TYPE_COMMUNICATE</a></td>
-        <td class="jd-descrcol" width="100%">The act of conveying information to another person via a communication medium (instrument)
- such as speech, email, or telephone conversation.</td>
+        <td class="jd-descrcol" width="100%">The act of conveying information to another person via a communication medium (instrument) such
+ as speech, email, or telephone conversation.</td>
     </tr>
     
     
@@ -1243,8 +1252,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The act of conveying information to another person via a communication medium (instrument)
- such as speech, email, or telephone conversation.
+  <div class="jd-tagdata jd-tagdescr"><p>The act of conveying information to another person via a communication medium (instrument) such
+ as speech, email, or telephone conversation.
 </p></div>
 
     
@@ -1647,9 +1656,9 @@ From class
         </tr>
         <tr>
           <th>objectName</td>
-          <td>The name of the content, must not be null. For more information, visit
- <a href="https://support.google.com/webmasters/answer/35624#3">these guidelines</a> for
- providing a descriptive name.</td>
+          <td>The name of the content, must not be null. For more information, visit <a
+     href="https://support.google.com/webmasters/answer/35624#3">these guidelines</a> for
+     providing a descriptive name.</td>
         </tr>
         <tr>
           <th>objectId</td>
@@ -1657,9 +1666,9 @@ From class
         </tr>
         <tr>
           <th>objectAppUri</td>
-          <td>The app URI of the content, must not be null. The URI must be in the
- <a href="https://developer.android.com/training/app-indexing/enabling-app-indexing.html">
- App Indexing</a> format.
+          <td>The app URI of the content, must not be null. The URI must be in the <a
+     href="https://developer.android.com/training/app-indexing/enabling-app-indexing.html">App
+     Indexing</a> format.
 </td>
         </tr>
       </table>
@@ -1701,15 +1710,15 @@ From class
         </tr>
         <tr>
           <th>objectName</td>
-          <td>The name of the content, must not be null. For more information, visit
- <a href="https://support.google.com/webmasters/answer/35624#3">these guidelines</a> for
- providing a descriptive name.</td>
+          <td>The name of the content, must not be null. For more information, visit <a
+     href="https://support.google.com/webmasters/answer/35624#3">these guidelines</a> for
+     providing a descriptive name.</td>
         </tr>
         <tr>
           <th>objectAppUri</td>
-          <td>The app URI of the content, must not be null. The URI must be in the
- <a href="https://developer.android.com/training/app-indexing/enabling-app-indexing.html">
- App Indexing</a> format.
+          <td>The app URI of the content, must not be null. The URI must be in the <a
+     href="https://developer.android.com/training/app-indexing/enabling-app-indexing.html">App
+     Indexing</a> format.
 </td>
         </tr>
       </table>

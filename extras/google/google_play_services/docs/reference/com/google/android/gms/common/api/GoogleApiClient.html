@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -535,6 +545,10 @@ Summary:
  Before any operation is executed, the GoogleApiClient must be connected. The simplest
  way to manage the connection is to use <code><a href="../../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#enableAutoManage(android.support.v4.app.FragmentActivity, com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener)">enableAutoManage(FragmentActivity, GoogleApiClient.OnConnectionFailedListener)</a></code>. See
  <a href="https://developers.google.com/android/guides/api-client">Accessing Google APIs</a>.
+ <p>
+ GoogleApiClient instances are not thread-safe. To access Google APIs from multiple threads
+ simultaneously, create a GoogleApiClient on each thread. GoogleApiClient service connections are
+ cached internally, so creating multiple instances is fast.
 </p>
 
 
@@ -1795,6 +1809,11 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns the <code><a href="../../../../../../../reference/com/google/android/gms/common/ConnectionResult.html">ConnectionResult</a></code> for the GoogleApiClient's connection to the
  specified API. This method must only be called after <code><a href="../../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()">connect()</a></code> has
  been called and before <code><a href="../../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.html#disconnect()">disconnect()</a></code> is called.
+ <p>
+ This method should be used to check the connection result of an API added via
+ <code><a href="../../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addApiIfAvailable(com.google.android.gms.common.api.Api<? extends com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions>, com.google.android.gms.common.api.Scope...)">addApiIfAvailable(Api<? extends Api.ApiOptions.NotRequiredOptions>, Scope...)</a></code> in the event that the overall connection succeeded, but the
+ individual API failed to connect. To check the failure of the overall connection, use
+ <code><a href="../../../../../../../reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addOnConnectionFailedListener(com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener)">addOnConnectionFailedListener(GoogleApiClient.OnConnectionFailedListener)</a></code>.
  <p>
  This method may return stale results if the GoogleApiClient is reconnecting due to a lost
  network connection. It is guaranteed to return the most recent ConnectionResult from

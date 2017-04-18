@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -472,9 +482,9 @@ Doclava
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Classes implementing this interface can be used to receive events about changes in the child
- locations of a given <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></code> ref. Attach the listener to
- a location using <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addChildEventListener(com.google.firebase.database.ChildEventListener)">addChildEventListener(ChildEventListener)</a></code>
- and the appropriate method will be triggered when changes occur.
+ locations of a given <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></code> ref. Attach the listener to a
+ location using <code><a href="../../../../../reference/com/google/firebase/database/Query.html#addChildEventListener(com.google.firebase.database.ChildEventListener)">addChildEventListener(ChildEventListener)</a></code> and the
+ appropriate method will be triggered when changes occur.
 </p>
 
 
@@ -547,8 +557,8 @@ Doclava
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/ChildEventListener.html#onCancelled(com.google.firebase.database.DatabaseError)">onCancelled</a></span>(<a href="../../../../../reference/com/google/firebase/database/DatabaseError.html">DatabaseError</a> error)</nobr>
         
-        <div class="jd-descrdiv">This method will be triggered in the event that this listener either failed at the server, or is removed as a
- result of the security and Firebase rules.</div>
+        <div class="jd-descrdiv">This method will be triggered in the event that this listener either failed at the server, or
+ is removed as a result of the security and Firebase rules.</div>
   
   </td></tr>
 
@@ -565,7 +575,8 @@ Doclava
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/ChildEventListener.html#onChildAdded(com.google.firebase.database.DataSnapshot, java.lang.String)">onChildAdded</a></span>(<a href="../../../../../reference/com/google/firebase/database/DataSnapshot.html">DataSnapshot</a> snapshot, String previousChildName)</nobr>
         
-        <div class="jd-descrdiv">This method is triggered when a new child is added to the location to which this listener was added.</div>
+        <div class="jd-descrdiv">This method is triggered when a new child is added to the location to which this listener was
+ added.</div>
   
   </td></tr>
 
@@ -616,7 +627,8 @@ Doclava
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/ChildEventListener.html#onChildRemoved(com.google.firebase.database.DataSnapshot)">onChildRemoved</a></span>(<a href="../../../../../reference/com/google/firebase/database/DataSnapshot.html">DataSnapshot</a> snapshot)</nobr>
         
-        <div class="jd-descrdiv">This method is triggered when a child is removed from the location to which this listener was added.</div>
+        <div class="jd-descrdiv">This method is triggered when a child is removed from the location to which this listener was
+ added.</div>
   
   </td></tr>
 
@@ -691,9 +703,10 @@ Doclava
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method will be triggered in the event that this listener either failed at the server, or is removed as a
- result of the security and Firebase rules. For more information on securing your data, see:
- <a href="https://www.firebase.com/docs/security-quickstart.html" target="_blank">Security Quickstart</a></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This method will be triggered in the event that this listener either failed at the server, or
+ is removed as a result of the security and Firebase rules. For more information on securing
+ your data, see: <a href="https://firebase.google.com/docs/database/security/quickstart"
+ target="_blank"> Security Quickstart</a></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -731,7 +744,8 @@ Doclava
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a new child is added to the location to which this listener was added.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a new child is added to the location to which this listener was
+ added.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -741,8 +755,8 @@ Doclava
         </tr>
         <tr>
           <th>previousChildName</td>
-          <td>The key name of sibling location ordered before the new child.
-                          This will be null for the first child node of a location.
+          <td>The key name of sibling location ordered before the new child. This
+     will be null for the first child node of a location.
 </td>
         </tr>
       </table>
@@ -784,8 +798,8 @@ Doclava
         </tr>
         <tr>
           <th>previousChildName</td>
-          <td>The key name of sibling location ordered before the child.
-                          This will be null for the first child node of a location.
+          <td>The key name of sibling location ordered before the child. This will
+     be null for the first child node of a location.
 </td>
         </tr>
       </table>
@@ -817,10 +831,9 @@ Doclava
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a child location's priority changes. See
- <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#setPriority(java.lang.Object)">setPriority(Object)</a></code> and
- <a href="https://www.firebase.com/docs/android/guide/retrieving-data.html#section-ordered-data" target="_blank">Ordered Data</a>
- for more information on priorities and ordering data.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a child location's priority changes. See <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#setPriority(java.lang.Object)">setPriority(Object)</a></code> and <a
+ href="https://firebase.google.com/docs/database/android/retrieve-data#data_order"
+ target="_blank">Ordered Data</a> for more information on priorities and ordering data.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -830,8 +843,8 @@ Doclava
         </tr>
         <tr>
           <th>previousChildName</td>
-          <td>The key name of the sibling location ordered before the child location.
-                          This will be null if this location is ordered first.
+          <td>The key name of the sibling location ordered before the child
+     location. This will be null if this location is ordered first.
 </td>
         </tr>
       </table>
@@ -863,7 +876,8 @@ Doclava
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a child is removed from the location to which this listener was added.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This method is triggered when a child is removed from the location to which this listener was
+ added.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

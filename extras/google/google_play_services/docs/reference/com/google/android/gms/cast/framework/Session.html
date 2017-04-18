@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -1288,8 +1298,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the category associated with this <code><a href="../../../../../../../reference/com/google/android/gms/cast/framework/Session.html">Session</a></code>.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the category associated with this <code><a href="../../../../../../../reference/com/google/android/gms/cast/framework/Session.html">Session</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1317,8 +1336,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the unique ID for this session.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the unique ID for this session.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1349,8 +1377,17 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Subclass can override this method to provide a hint of how long the current session will
  live. The SDK may call this method at any time to decide how long it should try to
  automatically resume the session if it got disconnected unexpectedly. The default return
- value is <code>0</code>.
-</p></div>
+ value is <code>0</code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1378,8 +1415,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is connected.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is connected.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1407,8 +1453,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is connecting or resuming.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is connecting or resuming.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1436,8 +1491,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is disconnected.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is disconnected.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1465,8 +1529,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is disconnecting.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is disconnecting.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1495,8 +1568,17 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is resuming. A session is considered connecting when
- resuming.
-</p></div>
+ resuming.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
@@ -1525,8 +1607,17 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Returns <code>true</code> if the session is suspended. A session is considered connecting when is
- suspended.
-</p></div>
+ suspended.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalStateException</td>
+            <td>If this method is not called on the main thread.
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>

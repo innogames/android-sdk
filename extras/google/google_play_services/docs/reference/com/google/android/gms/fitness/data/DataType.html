@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -319,6 +325,10 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/crash/package-summary.html">com.google.firebase.crash</a></li>
@@ -353,6 +363,13 @@ Doclava
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataUpdateNotification.html">DataUpdateNotification</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Device.html">Device</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Field.html">Field</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.html">Goal</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.DurationObjective.html">Goal.DurationObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.FrequencyObjective.html">Goal.FrequencyObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.MetricObjective.html">Goal.MetricObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.Recurrence.html">Goal.Recurrence</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/HealthDataTypes.html">HealthDataTypes</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/HealthFields.html">HealthFields</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Session.html">Session</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Session.Builder.html">Session.Builder</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Subscription.html">Subscription</a></li>
@@ -362,6 +379,11 @@ Doclava
     </li>
               
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.MismatchedGoalException.html">Goal.MismatchedGoalException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
           </div><!-- end classes -->
@@ -403,13 +425,6 @@ Doclava
   
    
   
-  
-  
-  
-
-  
-  
-   
   
   
   
@@ -488,7 +503,9 @@ Summary:
   
       implements 
       
-        SafeParcelable 
+        Parcelable 
+      
+        Parcelable 
       
   
   
@@ -623,37 +640,6 @@ Summary:
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Constants</div></th></tr>
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable" class="jd-expando-trigger closed"
-          ><img id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>From interface
-com.google.android.gms.common.internal.safeparcel.SafeParcelable
-<div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable">
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol">NULL</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-</table>
-  </div>
-</div>
-</td></tr>
 
 
 
@@ -796,9 +782,10 @@ android.os.Parcelable
           static
           final
           <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a></nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#AGGREGATE_HYDRATION">AGGREGATE_HYDRATION</a></td>
-          <td class="jd-descrcol" width="100%">In the <code>com.google.hydration</code> data type, each data point represents the volume of water
- consumed by a user as part of a single drink.</td>
+          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#AGGREGATE_HEIGHT_SUMMARY">AGGREGATE_HEIGHT_SUMMARY</a></td>
+          <td class="jd-descrcol" width="100%">In the <code>com.google.height.summary</code> data type, each data point represents the
+ average, maximum and minimum height, in meters, over the time interval of
+ the data point.</td>
       </tr>
       
     
@@ -807,13 +794,31 @@ android.os.Parcelable
           public
           static
           final
-          Set&lt;<a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a>&gt;</nobr></td>
-          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#AGGREGATE_INPUT_TYPES">AGGREGATE_INPUT_TYPES</a></td>
-          <td class="jd-descrcol" width="100%">List of data types that are supported as <b>input</b> data types for aggregation.</td>
+          <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#AGGREGATE_HYDRATION">AGGREGATE_HYDRATION</a></td>
+          <td class="jd-descrcol" width="100%">In the <code>com.google.hydration</code> data type, the <code>field_volume</code> in the data point
+ represents the volume, in liters, of water consumed by a user as part of a single drink.</td>
       </tr>
       
     
       <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          public
+          static
+          final
+          Set&lt;<a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a>&gt;</nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#AGGREGATE_INPUT_TYPES">AGGREGATE_INPUT_TYPES</a></td>
+          <td class="jd-descrcol" width="100%"><em>
+      This field is deprecated.
+    to check if a data type is supported for aggregation, use
+ <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#getAggregatesForInput(com.google.android.gms.fitness.data.DataType)">getAggregatesForInput(DataType)</a></code> and check the result:
+ <code>DataType.getAggregatesForInput(dataType).isEmpty()</code>.
+ <b>This field will be removed in the next release.</b>
+</em></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -825,7 +830,7 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -837,7 +842,7 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -849,7 +854,7 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -862,7 +867,7 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -873,7 +878,7 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class="alt-color api apilevel-" >
+      <tr class=" api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
@@ -886,15 +891,29 @@ android.os.Parcelable
       </tr>
       
     
-      <tr class=" api apilevel-" >
+      <tr class="alt-color api apilevel-" >
           <td class="jd-typecol"><nobr>
           public
           static
           final
           <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a></nobr></td>
           <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_ACTIVITY_SAMPLE">TYPE_ACTIVITY_SAMPLE</a></td>
-          <td class="jd-descrcol" width="100%">In the <code>com.google.activity.sample</code> data type, each data point represents an
- instantaneous sample of the current activity.</td>
+          <td class="jd-descrcol" width="100%"><em>
+      This field is deprecated.
+    use <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_ACTIVITY_SAMPLES">TYPE_ACTIVITY_SAMPLES</a></code>
+</em></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          public
+          static
+          final
+          <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a></nobr></td>
+          <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_ACTIVITY_SAMPLES">TYPE_ACTIVITY_SAMPLES</a></td>
+          <td class="jd-descrcol" width="100%">In the <code>com.google.activity.samples</code> data type, each data point represents the
+ instantaneous samples of the current activities.</td>
       </tr>
       
     
@@ -1053,8 +1072,8 @@ android.os.Parcelable
           final
           <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a></nobr></td>
           <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_HYDRATION">TYPE_HYDRATION</a></td>
-          <td class="jd-descrcol" width="100%">In the <code>com.google.hydration</code> data type, each data point represents the volume of water
- consumed by a user as part of a single drink.</td>
+          <td class="jd-descrcol" width="100%">In the <code>com.google.hydration</code> data type, the <code>field_volume</code> in the data point
+ represents the volume, in liters, of water consumed by a user as part of a single drink.</td>
       </tr>
       
     
@@ -1535,8 +1554,6 @@ From class
 
 
 
-
-
 <tr class="api apilevel-" >
 <td colspan="12">
   <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.Parcelable" class="jd-expando-trigger closed"
@@ -1917,6 +1934,39 @@ From interface
 
 
 
+<A NAME="AGGREGATE_HEIGHT_SUMMARY"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a>
+      </span>
+        AGGREGATE_HEIGHT_SUMMARY
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.height.summary</code> data type, each data point represents the
+ average, maximum and minimum height, in meters, over the time interval of
+ the data point.
+ <p>
+ Because this is an aggregate data type, the start and end times should be set.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="AGGREGATE_HYDRATION"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1937,11 +1987,9 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.hydration</code> data type, each data point represents the volume of water
- consumed by a user as part of a single drink.
- <p>
- In case the drink time is known, it should be reflected in the timestamps. Otherwise, start
- and end times should be set to the range in which the drink occurred.
+  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.hydration</code> data type, the <code>field_volume</code> in the data point
+ represents the volume, in liters, of water consumed by a user as part of a single drink. The
+ timestamp indicates when the drink was consumed.
  <p>
 </p></div>
 
@@ -1970,28 +2018,16 @@ From interface
 
       </div>
     <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>List of data types that are supported as <b>input</b> data types for aggregation.  These
- include:
- <ul>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_ACTIVITY_SEGMENT">activity.segment</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_BASAL_METABOLIC_RATE">calories.bmr</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_BODY_FAT_PERCENTAGE">body.fat.percentage</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_CALORIES_CONSUMED">caloires.consumed</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_CALORIES_EXPENDED">calories.expended</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_DISTANCE_DELTA">distance.delta</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_HEART_RATE_BPM">heart_rate.bpm</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_LOCATION_SAMPLE">location.sample</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_NUTRITION">nutrition</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_HYDRATION">hydration</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_POWER_SAMPLE">power.sample</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_SPEED">speed</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_STEP_COUNT_DELTA">step_count.delta</a></code>
-     <li/><code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_WEIGHT">weight</a></code>
- </ul>
- Currently, data types outside of the <code>com.google</code> namespace cannot be aggregated by
- the platform.
-</p></div>
+      <p>
+  <p class="caution"><strong>
+      This field is deprecated.</strong><br/>
+    to check if a data type is supported for aggregation, use
+ <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#getAggregatesForInput(com.google.android.gms.fitness.data.DataType)">getAggregatesForInput(DataType)</a></code> and check the result:
+ <code>DataType.getAggregatesForInput(dataType).isEmpty()</code>.
+ <b>This field will be removed in the next release.</b>
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p>List of data types that are supported as <b>input</b> data types for aggregation.</p></div>
 
     
     </div>
@@ -2229,7 +2265,12 @@ From interface
 
       </div>
     <div class="jd-details-descr">
-      
+      <p>
+  <p class="caution"><strong>
+      This field is deprecated.</strong><br/>
+    use <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html#TYPE_ACTIVITY_SAMPLES">TYPE_ACTIVITY_SAMPLES</a></code>
+
+  </p>
   <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.activity.sample</code> data type, each data point represents an
  instantaneous sample of the current activity.  The data point has two fields, the first one
  representing the activity (as described in
@@ -2241,7 +2282,44 @@ From interface
  <p>
  It's possible that more than one activity is detected at the same time with different
  confidence values.  This can be represented as multiple data points with the same timestamp
- but different field values.
+ but different field values.</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="TYPE_ACTIVITY_SAMPLES"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">DataType</a>
+      </span>
+        TYPE_ACTIVITY_SAMPLES
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.activity.samples</code> data type, each data point represents the
+ instantaneous samples of the current activities. The data point has two fields:
+ <p>
+ One representing a map of the activities detected to the confidences for each (as
+ described in <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Field.html#FIELD_ACTIVITY_CONFIDENCE">FIELD_ACTIVITY_CONFIDENCE</a></code>).
+ <p>
+ The confidence is specified as a float between 0.0 and 100.0.
+ If the confidence is unknown or not calculated, a negative value can be used.
+ <p>
+ Because the samples are instantaneous, start time has no meaning and should be left unset.
 </p></div>
 
     
@@ -2412,7 +2490,7 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.calories.expended</code> data type, each data point represents the number
  of calories expended, in kcal, over the time interval of the data point.  The field value
- is stored as a float.
+ is stored as a float. Note: this total calories number includes BMR calories expended.
  <p>
  Start and end times should be set to denote the duration over which the calories were
  expended.
@@ -2700,12 +2778,21 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.hydration</code> data type, each data point represents the volume of water
- consumed by a user as part of a single drink.
+  <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.hydration</code> data type, the <code>field_volume</code> in the data point
+ represents the volume, in liters, of water consumed by a user as part of a single drink. The
+ timestamp indicates when the drink was consumed.
  <p>
- In case the drink time is known, it should be reflected in the timestamps. Otherwise, start
- and end times should be set to the range in which the drink occurred.
- <p>
+ Here's an example of creating a DataPoint to represent the user drinking 0.3 liters of water:
+ <pre>
+    DataSource hydrationSource = new DataSource.Builder()
+            .setDataType(DataType.TYPE_HYDRATION)
+            ...
+            .build();
+
+    DataPoint hydration = DataPoint.create(hydrationSource);
+    hydration.setTimestamp(now.getMillis(), TimeUnit.MILLISECONDS);
+    hydration.getValue(FIELD_VOLUME).setFloat(0.3f);
+ </pre>
 </p></div>
 
     
@@ -2971,13 +3058,11 @@ From interface
       
   <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.step_count.cadence</code> data type, each data point represents an
  instantaneous measurement of the cadence in steps per minute.
- <p>
- Both feet are used for calculating cadence, so if a sensor only measures one foot the value
+
+ <p>Both feet are used for calculating cadence, so if a sensor only measures one foot the value
  measurement is doubled.
- <p>
- Start time should be left unset.  Different data sources will need to monitor the rotations
- of the crank for different amounts of time before calculating the instantaneous RPM.
- This should be indicated as part of the data source and not the data point.
+
+ <p>Start time should be left unset.
 </p></div>
 
     
@@ -3081,7 +3166,7 @@ From interface
   <div class="jd-tagdata jd-tagdescr"><p>In the <code>com.google.activity.exercise</code> data type, each data point represents a single
  continuous set of a <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/WorkoutExercises.html">workout exercise</a></code> performed by a user.
  <p>
- The data point contains fields for the exercise type, the number of repetitions of the 
+ The data point contains fields for the exercise type, the number of repetitions of the
  exercise, the duration of the exercise, and the resistance.
  <p>
  The <code>exercise type</code> is specified as a string.  Several canonical exercise types are
@@ -3094,14 +3179,14 @@ From interface
  <p>
  The <code>repetition</code> field counts the number of repetitions of an exercise.  It is intended
  for sets of exercises where a user performs a repetition several times.  When the exercise is
- performed with an equal number of repetitions on each side (for instance, 10 curls on the 
+ performed with an equal number of repetitions on each side (for instance, 10 curls on the
  right biceps and 10 curls on the left biceps), the repetition count of a single side only
  should be used (10 in this case).  When the exercise is not a repeating exercise, or when
  the repetition count isn't known, the value should be left unset.
  <p>
  The <code>duration</code> field is specified in milliseconds, and holds the duration of an
- exercise for which the duration matters.  Examples of such exercises include planks, 
- stretches, as well as repeating exercises for which the user is attempting to perform as 
+ exercise for which the duration matters.  Examples of such exercises include planks,
+ stretches, as well as repeating exercises for which the user is attempting to perform as
  many repetitions as possible during a given time period.  When the duration of the exercise
  isn't known, this field should be left unset.
  <p>
@@ -3114,7 +3199,7 @@ From interface
  The timestamp of the data point should represent the time at which the user performed the
  exercise.  If the exact time is not known, an approximate time may be entered.  Note that,
  when reading data, exercise data points will be returned in timestamp order, so if the order
- of the exercises is known it should be reflected in the timestamps (even if they are 
+ of the exercises is known it should be reflected in the timestamps (even if they are
  approximate).
  <p>
  When several exercise data points are recorded together as part of a single workout, it's

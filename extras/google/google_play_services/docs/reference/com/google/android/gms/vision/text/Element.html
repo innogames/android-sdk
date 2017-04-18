@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -597,7 +607,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/vision/text/Element.html#getComponents()">getComponents</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Smaller components that comprise this entity, if any.</div>
+        <div class="jd-descrdiv">This class is the bottom of the tree, so this function always returns an empty list as it has
+ no components.</div>
   
   </td></tr>
 
@@ -1044,13 +1055,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Smaller components that comprise this entity, if any. If this entity is an atom, an empty
- list is returned. <code><a href="../../../../../../../reference/com/google/android/gms/vision/text/TextBlock.html">TextBlock</a></code> is at the top of the Text hierarchy.
- <code><a href="../../../../../../../reference/com/google/android/gms/vision/text/TextBlock.html">TextBlock</a></code> contains <code><a href="../../../../../../../reference/com/google/android/gms/vision/text/Line.html">Line</a></code> objects, which contains <code><a href="../../../../../../../reference/com/google/android/gms/vision/text/Element.html">Element</a></code>s. <code><a href="../../../../../../../reference/com/google/android/gms/vision/text/Element.html">Element</a></code>s are atoms. We may decide to add character-level objects in later versions.
-
- For example, a client could draw bounding boxes for recognized text in different colors for
- paragraphs, lines, words, and alphabets by repeatedly traversing down the tree with this
- method.
+  <div class="jd-tagdata jd-tagdescr"><p>This class is the bottom of the tree, so this function always returns an empty list as it has
+ no components.
 </p></div>
 
     </div>
@@ -1138,8 +1144,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Retrieve the recognized text as a string.  Returned in reading order for the language.
- For Latin, this is top to bottom within a TextBlock, and left-to-right within Lines.
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieve the recognized text as a string. Returned in reading order for the language. For
+ Latin, this is top to bottom within a TextBlock, and left-to-right within Lines.
 </p></div>
 
     </div>

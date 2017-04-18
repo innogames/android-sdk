@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -507,8 +517,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Frame metadata, describing the image dimensions, rotation, and sequencing information.
-</p>
+<p itemprop="articleBody">Frame metadata, describing the image dimensions, rotation, and sequencing information. </p>
 
 
 
@@ -1045,9 +1054,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p>Returns the format of this image if <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.Builder.html#setImageData(java.nio.ByteBuffer, int, int, int)">image data</a></code> is set.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>one of <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#NV16">NV16</a></code>,
-   <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#NV21">NV21</a></code>, or
-   <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#YV12">YV12</a></code>
+      <ul class="nolist"><li>one of <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#NV16">NV16</a></code>, <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#NV21">NV21</a></code>, or <code><a href="../../../../../../reference/android/graphics/ImageFormat.html#YV12">YV12</a></code>
 </li></ul>
   </div>
 
@@ -1077,8 +1084,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame height.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame height. </p></div>
 
     </div>
 </div>
@@ -1106,9 +1112,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame ID.  A frame source such as a live video camera or a video player is
- expected to assign IDs in monotonically increasing order, to indicate the sequence that
- the frame appeared relative to other frames.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame ID. A frame source such as a live video camera or a video player is
+ expected to assign IDs in monotonically increasing order, to indicate the sequence that the
+ frame appeared relative to other frames.
 </p></div>
 
     </div>
@@ -1138,24 +1144,25 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Returns the image rotation, indicating the counter-clockwise rotation from the upright
- orientation. Has the same meaning as in <code><a href="../../../../../../reference/android/view/Display.html#getRotation()">getRotation()</a></code>.<p>
+ orientation. Has the same meaning as in <code><a href="../../../../../../reference/android/view/Display.html#getRotation()">getRotation()</a></code>.
 
- Since the camera may deliver images that are rotated (e.g., if the user holds the device
+ <p>Since the camera may deliver images that are rotated (e.g., if the user holds the device
  upside down), specifying the rotation with the image indicates how to make the image be
- upright, if necessary.  Some detectors may rely upon rotating the image before attempting
- detection, whereas others may not.  In preserving the original image from the camera
- along with this value, the detector may choose whether to make this correction (and to
- assume the associated cost).<p>
+ upright, if necessary. Some detectors may rely upon rotating the image before attempting
+ detection, whereas others may not. In preserving the original image from the camera along
+ with this value, the detector may choose whether to make this correction (and to assume the
+ associated cost).
 
- However, note that the detector is expected to report detection position coordinates that
+ <p>However, note that the detector is expected to report detection position coordinates that
  are relative to the upright version of the image (whether or not the image was actually
- rotated by the detector).  The <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html">Detector</a></code> will always deliver frame metadata to the
+ rotated by the detector). The <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html">Detector</a></code> will always deliver frame metadata to the
  <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Processor.html">Detector.Processor</a></code> that indicates the dimensions and orientation of an unrotated,
- upright frame.<p></p></div>
+ upright frame.
+
+ <p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>one of <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_0">ROTATION_0</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_90">ROTATION_90</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_180">ROTATION_180</a></code>,
- <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_270">ROTATION_270</a></code>.
+      <ul class="nolist"><li>one of <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_0">ROTATION_0</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_90">ROTATION_90</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_180">ROTATION_180</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/vision/Frame.html#ROTATION_270">ROTATION_270</a></code>.
 </li></ul>
   </div>
 
@@ -1185,13 +1192,13 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the timestamp, in milliseconds.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the timestamp, in milliseconds.
 
- A frame source such as a live video camera or a video player is expected to assign
- timestamps in a way that makes sense for the medium.  For example, live video may use the
+ <p>A frame source such as a live video camera or a video player is expected to assign
+ timestamps in a way that makes sense for the medium. For example, live video may use the
  capture time of each frame, whereas a video player may use the elapsed time to the frame
- within the video.  Timestamps should be in monotonically increasing order, to indicate
- the passage of time.
+ within the video. Timestamps should be in monotonically increasing order, to indicate the
+ passage of time.
 </p></div>
 
     </div>
@@ -1220,8 +1227,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame width.
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the frame width. </p></div>
 
     </div>
 </div>

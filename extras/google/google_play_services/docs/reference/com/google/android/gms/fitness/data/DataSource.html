@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -319,6 +325,10 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../../reference/com/google/firebase/crash/package-summary.html">com.google.firebase.crash</a></li>
@@ -353,6 +363,13 @@ Doclava
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataUpdateNotification.html">DataUpdateNotification</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Device.html">Device</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Field.html">Field</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.html">Goal</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.DurationObjective.html">Goal.DurationObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.FrequencyObjective.html">Goal.FrequencyObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.MetricObjective.html">Goal.MetricObjective</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.Recurrence.html">Goal.Recurrence</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/HealthDataTypes.html">HealthDataTypes</a></li>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/HealthFields.html">HealthFields</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Session.html">Session</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Session.Builder.html">Session.Builder</a></li>
           <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Subscription.html">Subscription</a></li>
@@ -362,6 +379,11 @@ Doclava
     </li>
               
               
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Goal.MismatchedGoalException.html">Goal.MismatchedGoalException</a></li>
+      </ul>
+    </li>
               
             </ul><br/>
           </div><!-- end classes -->
@@ -403,13 +425,6 @@ Doclava
   
    
   
-  
-  
-  
-
-  
-  
-   
   
   
   
@@ -488,7 +503,7 @@ Summary:
   
       implements 
       
-        SafeParcelable 
+        Parcelable 
       
   
   
@@ -530,18 +545,18 @@ Summary:
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Definition of a unique source of sensor data.  Data sources can expose raw data coming from
  hardware sensors on local or companion devices.  They can also expose derived data, created by
- transforming or merging other data sources.  Multiple data sources can exist for the same
- <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">data type</a></code>.  Every data point inserted into or read from Google Fit has an
- associated data source.
- <p>
- The data source contains enough information to uniquely identify its data, including the hardware
- <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Device.html">device</a></code> and the <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getAppPackageName()">application</a></code> that collected and/or
- transformed the data.  It also holds useful metadata, such as a stream name and the device type.
- <p>
- The data source's data stream can be accessed in a live fashion by registering a data source
+ transforming or merging other data sources.  Multiple data sources can exist for the same <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">data type</a></code>.  Every data point inserted into or read from Google Fit has an associated
+ data source.
+
+ <p>The data source contains enough information to uniquely identify its data,
+ including the hardware <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/Device.html">device</a></code> and the <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getAppPackageName()">application</a></code>
+ that collected and/or transformed the data.  It also holds useful metadata, such as a stream name
+ and the device type.
+
+ <p>The data source's data stream can be accessed in a live fashion by registering a data source
  listener, or via queries over fixed time intervals.
- <p>
- An end-user-visible name for the data stream can be set by calling
+
+ <p> An end-user-visible name for the data stream can be set by calling
  <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setName(java.lang.String)">setName(String)</a></code> or otherwise computed from the device model and application name.
 </p>
 
@@ -610,25 +625,88 @@ Summary:
 
     
     <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_GLUCOSE_ISO151972003">DATA_QUALITY_BLOOD_GLUCOSE_ISO151972003</a></td>
+        <td class="jd-descrcol" width="100%">ISO: 15197:2003 </td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_GLUCOSE_ISO151972013">DATA_QUALITY_BLOOD_GLUCOSE_ISO151972013</a></td>
+        <td class="jd-descrcol" width="100%">ISO: 15197:2013 </td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_AAMI">DATA_QUALITY_BLOOD_PRESSURE_AAMI</a></td>
+        <td class="jd-descrcol" width="100%">Association for the Advancement of Medical Instrumentation.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_BHS_A_A">DATA_QUALITY_BLOOD_PRESSURE_BHS_A_A</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien et al.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_BHS_A_B">DATA_QUALITY_BLOOD_PRESSURE_BHS_A_B</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien et al.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_BHS_B_A">DATA_QUALITY_BLOOD_PRESSURE_BHS_B_A</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien et al.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_BHS_B_B">DATA_QUALITY_BLOOD_PRESSURE_BHS_B_B</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien et al.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_ESH2002">DATA_QUALITY_BLOOD_PRESSURE_ESH2002</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien, Eoin, et al.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#DATA_QUALITY_BLOOD_PRESSURE_ESH2010">DATA_QUALITY_BLOOD_PRESSURE_ESH2010</a></td>
+        <td class="jd-descrcol" width="100%">O'Brien, Atkins et al.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">String</td>
         <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#EXTRA_DATA_SOURCE">EXTRA_DATA_SOURCE</a></td>
         <td class="jd-descrcol" width="100%">Name for the parcelable intent extra containing a data source.</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#TYPE_DERIVED">TYPE_DERIVED</a></td>
-        <td class="jd-descrcol" width="100%">Type constant for a data source which exposes data which is derived from one or more
- existing data sources by performing transformations on the original data.</td>
+        <td class="jd-descrcol" width="100%">Type constant for a data source which exposes data which is derived from one or more existing
+ data sources by performing transformations on the original data.</td>
     </tr>
     
     
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol">int</td>
         <td class="jd-linkcol"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#TYPE_RAW">TYPE_RAW</a></td>
-        <td class="jd-descrcol" width="100%">Type constant for a data source which exposes original, raw data from an external source
- such as a hardware sensor, a wearable device, or user input.</td>
+        <td class="jd-descrcol" width="100%">Type constant for a data source which exposes original, raw data from an external source such
+ as a hardware sensor, a wearable device, or user input.</td>
     </tr>
     
     
@@ -644,37 +722,6 @@ Summary:
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Constants</div></th></tr>
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable" class="jd-expando-trigger closed"
-          ><img id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-trigger"
-          src="../../../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>From interface
-com.google.android.gms.common.internal.safeparcel.SafeParcelable
-<div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable">
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-constants-com.google.android.gms.common.internal.safeparcel.SafeParcelable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-    
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol">NULL</td>
-        <td class="jd-descrcol" width="100%"></td>
-    </tr>
-    
-    
-</table>
-  </div>
-</div>
-</td></tr>
 
 
 
@@ -761,8 +808,7 @@ android.os.Parcelable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#extract(android.content.Intent)">extract</a></span>(Intent intent)</nobr>
         
-        <div class="jd-descrdiv">Extracts the data source extra from the given intent, such as an intent to
- <a href="../../../../../../../reference/com/google/android/gms/fitness/HistoryApi.ViewIntentBuilder.html">view user's data</a></a>.</div>
+        <div class="jd-descrdiv">Extracts the data source extra from the given intent, such as an intent to <a href="../../../../../../../reference/com/google/android/gms/fitness/HistoryApi.ViewIntentBuilder.html">view user's data</a></a>.</div>
   
   </td></tr>
 
@@ -779,14 +825,31 @@ android.os.Parcelable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getAppPackageName()">getAppPackageName</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the package name for the application responsible for setting the data,
- or <code>null</code> if unset/unknown.</div>
+        <div class="jd-descrdiv">Returns the package name for the application responsible for setting the data, or <code>null</code>
+ if unset/unknown.</div>
   
   </td></tr>
 
 
 	 
     <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            int[]</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getDataQualityStandards()">getDataQualityStandards</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns a list of data quality standards adhered to by this data source.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -803,7 +866,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -820,7 +883,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -837,7 +900,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -854,7 +917,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -865,14 +928,14 @@ android.os.Parcelable
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getStreamName()">getStreamName</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the specific <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">name</a></code> for the stream coming form
- this data source, or <code>null</code> if unset.</div>
+        <div class="jd-descrdiv">Returns the specific <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">name</a></code> for the stream coming form this
+ data source, or <code>null</code> if unset.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -889,7 +952,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -904,7 +967,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class="alt-color api apilevel-" >
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -919,7 +982,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1139,8 +1202,6 @@ From class
 
 
 
-
-
 <tr class="api apilevel-" >
 <td colspan="12">
   <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.os.Parcelable" class="jd-expando-trigger closed"
@@ -1225,6 +1286,374 @@ From interface
 
 
 
+<A NAME="DATA_QUALITY_BLOOD_GLUCOSE_ISO151972003"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_GLUCOSE_ISO151972003
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO: 15197:2003 </p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                8
+                (0x00000008)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_GLUCOSE_ISO151972013"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_GLUCOSE_ISO151972013
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>ISO: 15197:2013 </p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                9
+                (0x00000009)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_AAMI"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_AAMI
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Association for the Advancement of Medical Instrumentation. American
+ National Standard. Manual, electronic or automated sphygmomanometers
+ ANSI/AAMI SP10-2002/A1. 3330 Washington Boulevard, Suite 400, Arlington,
+ VA 22201-4598, USA: AAMI; 2003.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                3
+                (0x00000003)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_BHS_A_A"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_BHS_A_A
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien et al. "The British Hypertension Society Protocol for the
+ evaluation of blood pressure measuring devices."
+ J Hypertens 1993;11(suppl 2):S43-S63.
+ Meets A/A quality standard.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                4
+                (0x00000004)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_BHS_A_B"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_BHS_A_B
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien et al. "The British Hypertension Society Protocol for the
+ evaluation of blood pressure measuring devices."
+ J Hypertens 1993;11(suppl 2):S43-S63.
+ Meets A/B quality standard.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                5
+                (0x00000005)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_BHS_B_A"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_BHS_B_A
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien et al. "The British Hypertension Society Protocol for the
+ evaluation of blood pressure measuring devices."
+ J Hypertens 1993;11(suppl 2):S43-S63.
+ Meets B/A quality standard.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                6
+                (0x00000006)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_BHS_B_B"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_BHS_B_B
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien et al. "The British Hypertension Society Protocol for the
+ evaluation of blood pressure measuring devices."
+ J Hypertens 1993;11(suppl 2):S43-S63.
+ Meets B/B quality standard.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                7
+                (0x00000007)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_ESH2002"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_ESH2002
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien, Eoin, et al. "Working Group on Blood Pressure Monitoring of the European Society
+ of Hypertension International Protocol for validation of blood pressure measuring devices
+ in adults." Blood pressure monitoring 7.1 (2002): 3-17.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                1
+                (0x00000001)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="DATA_QUALITY_BLOOD_PRESSURE_ESH2010"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        DATA_QUALITY_BLOOD_PRESSURE_ESH2010
+    </h4>
+      <div class="api-level">
+        
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>O'Brien, Atkins et al. "European Society of Hypertension
+ International Protocol revision 2010 for the validation of blood pressure
+ measuring devices in adults." Blood Pressure Monitoring 2010, 15:23–38
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                2
+                (0x00000002)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
 <A NAME="EXTRA_DATA_SOURCE"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1245,8 +1674,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Name for the parcelable intent extra containing a data source.  It can be
- extracted using <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#extract(android.content.Intent)">extract(Intent)</a></code>.
+  <div class="jd-tagdata jd-tagdescr"><p>Name for the parcelable intent extra containing a data source.  It can be extracted using
+ <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#extract(android.content.Intent)">extract(Intent)</a></code>.
 </p></div>
 
     
@@ -1284,8 +1713,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Type constant for a data source which exposes data which is derived from one or more
- existing data sources by performing transformations on the original data.
+  <div class="jd-tagdata jd-tagdescr"><p>Type constant for a data source which exposes data which is derived from one or more existing
+ data sources by performing transformations on the original data.
 </p></div>
 
     
@@ -1324,8 +1753,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Type constant for a data source which exposes original, raw data from an external source
- such as a hardware sensor, a wearable device, or user input.
+  <div class="jd-tagdata jd-tagdescr"><p>Type constant for a data source which exposes original, raw data from an external source such
+ as a hardware sensor, a wearable device, or user input.
 </p></div>
 
     
@@ -1414,8 +1843,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Extracts the data source extra from the given intent, such as an intent to
- <a href="../../../../../../../reference/com/google/android/gms/fitness/HistoryApi.ViewIntentBuilder.html">view user's data</a></a>.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Extracts the data source extra from the given intent, such as an intent to <a href="../../../../../../../reference/com/google/android/gms/fitness/HistoryApi.ViewIntentBuilder.html">view user's data</a></a>.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>the data source, or <code>null</code> if not found
@@ -1448,11 +1876,40 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the package name for the application responsible for setting the data,
- or <code>null</code> if unset/unknown.  The <code><a href="../../../../../../../reference/android/content/pm/PackageManager.html">PackageManager</a></code> can be used to query
- relevant data on the application, such as the name, icon, logo, etc.
- <p>
- Data coming from local sensors or BLE devices will not have a corresponding application.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the package name for the application responsible for setting the data, or <code>null</code>
+ if unset/unknown.  The <code><a href="../../../../../../../reference/android/content/pm/PackageManager.html">PackageManager</a></code> can be used to query relevant data on the
+ application, such as the name, icon, logo, etc. <p> Data coming from local sensors or BLE
+ devices will not have a corresponding application.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getDataQualityStandards()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        int[]
+      </span>
+      <span class="sympad">getDataQualityStandards</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a list of data quality standards adhered to by this data source. Possible values
+ include all constants in this class prefixed with <code>DATA_QUALITY_</code>.
 </p></div>
 
     </div>
@@ -1541,10 +1998,9 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the specified user-visible name for the data source, or <code>null</code> if unset.
- <p>
- If the name is unset, the <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getDevice()">device</a></code> model and
- <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getAppPackageName()">app</a></code> can be used as user-visible identifiers for the source.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the specified user-visible name for the data source, or <code>null</code> if unset. <p> If
+ the name is unset, the <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getDevice()">device</a></code> model and <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.html#getAppPackageName()">app</a></code>
+ can be used as user-visible identifiers for the source.
 </p></div>
 
     </div>
@@ -1576,11 +2032,11 @@ From interface
   <div class="jd-tagdata jd-tagdescr"><p>Returns a unique identifier for the data stream produced by this data source.  The identifier
  includes:
  <ul>
- <li>the physical device's manufacturer, model, and serial number (UID)
- <li>the application's package name (unique for a given application)
- <li>The data source's <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">data type</a></a>
- <li>the data source's type (raw or derived)
- <li>the data source's <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">stream name</a></a>.
+   <li>the physical device's manufacturer, model, and serial number (UID)
+   <li>the application's package name (unique for a given application)
+   <li>The data source's <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataType.html">data type</a></a>
+   <li>the data source's type (raw or derived)
+   <li>the data source's <a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">stream name</a></a>.
  </ul>
 </p></div>
 
@@ -1610,8 +2066,8 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the specific <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">name</a></code> for the stream coming form
- this data source, or <code>null</code> if unset.
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the specific <code><a href="../../../../../../../reference/com/google/android/gms/fitness/data/DataSource.Builder.html#setStreamName(java.lang.String)">name</a></code> for the stream coming form this
+ data source, or <code>null</code> if unset.
 </p></div>
 
     </div>

@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -518,19 +528,21 @@ Summary:
 <h2>Class Overview</h2>
 <p itemprop="articleBody">Detection processor which distributes the items of a detection result among individual trackers.
  This enables detection result processing code to be defined at the individual item level,
- avoiding the need for boilerplate code for iterating over and managing groups of items.<p>
+ avoiding the need for boilerplate code for iterating over and managing groups of items.
 
- When a new item is detected, a supplied <code><a href="../../../../../../reference/com/google/android/gms/vision/MultiProcessor.Factory.html">MultiProcessor.Factory</a></code> is used to create a <code><a href="../../../../../../reference/com/google/android/gms/vision/Tracker.html">Tracker</a></code>
- instance to receive notifications on that item.  This instance will be notified as the item
- changes, and eventually when the item is gone.  The tracker may accumulate whatever state is
- appropriate over the life cycle of the item.  For example, for gesture detection a face tracker
+ <p>When a new item is detected, a supplied <code><a href="../../../../../../reference/com/google/android/gms/vision/MultiProcessor.Factory.html">MultiProcessor.Factory</a></code> is used to create a <code><a href="../../../../../../reference/com/google/android/gms/vision/Tracker.html">Tracker</a></code>
+ instance to receive notifications on that item. This instance will be notified as the item
+ changes, and eventually when the item is gone. The tracker may accumulate whatever state is
+ appropriate over the life cycle of the item. For example, for gesture detection a face tracker
  may keep a record over time of recent landmark positions used in detecting a gesture such as
- blinking or a head nod.<p>
+ blinking or a head nod.
 
- For example, the code below creates and starts a pipeline that continuously receives preview
+ <p>For example, the code below creates and starts a pipeline that continuously receives preview
  frames from a camera source, runs detection on the frames, and uses a multiprocessor to
  continuously deliver notifications over multiple frames to tracker instances (a different tracker
- instance is created and managed for each distinct detected item).<p>
+ instance is created and managed for each distinct detected item).
+
+ <p>
 
  <pre><code>detector.setProcessor(
    new MultiProcessor.Builder<Foo>(new MyTrackerFactory()).build());

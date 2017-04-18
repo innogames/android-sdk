@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -513,12 +523,12 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Instances of this class encapsulate the data and priority at a location.
- It is used in transactions, and it is intended to be inspected and then updated
- to the desired data at that location.
- <br><br>
- Note that changes made to a child MutableData instance will be visible to the
- parent and vice versa.
+<p itemprop="articleBody">Instances of this class encapsulate the data and priority at a location. It is used in
+ transactions, and it is intended to be inspected and then updated to the desired data at that
+ location. <br>
+ <br>
+ Note that changes made to a child MutableData instance will be visible to the parent and vice
+ versa.
 </p>
 
 
@@ -591,8 +601,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/MutableData.html#child(java.lang.String)">child</a></span>(String path)</nobr>
         
-        <div class="jd-descrdiv">Used to obtain a MutableData instance that encapsulates the data and priority
- at the given relative path.</div>
+        <div class="jd-descrdiv">Used to obtain a MutableData instance that encapsulates the data and priority at the given
+ relative path.</div>
   
   </td></tr>
 
@@ -624,8 +634,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/MutableData.html#getChildren()">getChildren</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Used to iterate over the immediate children at this location
- <code>
+        <div class="jd-descrdiv">Used to iterate over the immediate children at this location <code>
      <br>for (MutableData child : parent.getChildren()) {
          <br>&nbsp;&nbsp;&nbsp;&nbsp;...</div>
   
@@ -691,7 +700,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/MutableData.html#getValue(com.google.firebase.database.GenericTypeIndicator<T>)">getValue</a></span>(<a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a>&lt;T&gt; t)</nobr>
         
-        <div class="jd-descrdiv">Due to the way that Java implements generics, it takes an extra step to get back a properly-typed Collection.</div>
+        <div class="jd-descrdiv">Due to the way that Java implements generics, it takes an extra step to get back a
+ properly-typed Collection.</div>
   
   </td></tr>
 
@@ -725,7 +735,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/MutableData.html#getValue(java.lang.Class<T>)">getValue</a></span>(Class&lt;T&gt; valueType)</nobr>
         
-        <div class="jd-descrdiv">This method is used to marshall the data contained in this instance into a class of your choosing.</div>
+        <div class="jd-descrdiv">This method is used to marshall the data contained in this instance into a class of your
+ choosing.</div>
   
   </td></tr>
 
@@ -1078,8 +1089,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Used to obtain a MutableData instance that encapsulates the data and priority
- at the given relative path.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Used to obtain a MutableData instance that encapsulates the data and priority at the given
+ relative path.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1149,8 +1160,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Used to iterate over the immediate children at this location
- <code>
+  <div class="jd-tagdata jd-tagdescr"><p>Used to iterate over the immediate children at this location <code>
      <br>for (MutableData child : parent.getChildren()) {
          <br>&nbsp;&nbsp;&nbsp;&nbsp;...
      <br>}
@@ -1190,8 +1200,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The number of immediate children at this location
-</li></ul>
+      <ul class="nolist"><li>The number of immediate children at this location </li></ul>
   </div>
 
     </div>
@@ -1223,8 +1232,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The key name of this location, or null if it is the top-most location
-</li></ul>
+      <ul class="nolist"><li>The key name of this location, or null if it is the top-most location </li></ul>
   </div>
 
     </div>
@@ -1254,10 +1262,12 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Gets the current priority at this location. The possible return types are:
+
  <ul>
-     <li>Double</li>
-     <li>String</li>
+   <li>Double
+   <li>String
  </ul>
+
  Note that null is allowed</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -1291,12 +1301,13 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Due to the way that Java implements generics, it takes an extra step to get back a properly-typed Collection.
- So, in the case where you want a <code><a href="../../../../../reference/java/util/List.html">List</a></code> of Message instances, you will need to do something like
- the following:
+  <div class="jd-tagdata jd-tagdescr"><p>Due to the way that Java implements generics, it takes an extra step to get back a
+ properly-typed Collection. So, in the case where you want a <code><a href="../../../../../reference/java/util/List.html">List</a></code> of Message
+ instances, you will need to do something like the following:
 
  <pre><code>
-     GenericTypeIndicator&lt;List&lt;Message&gt;&gt; t = new GenericTypeIndicator&lt;List&lt;Message&gt;&gt;() {};
+     GenericTypeIndicator&lt;List&lt;Message&gt;&gt; t =
+         new GenericTypeIndicator&lt;List&lt;Message&gt;&gt;() {};
      List&lt;Message&gt; messages = mutableData.getValue(t);
  </code></pre>
 
@@ -1306,7 +1317,8 @@ From class
       <table class="jd-tagtable">
         <tr>
           <th>t</td>
-          <td>A subclass of <code><a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a></code> indicating the type of generic collection to be returned.</td>
+          <td>A subclass of <code><a href="../../../../../reference/com/google/firebase/database/GenericTypeIndicator.html">GenericTypeIndicator</a></code> indicating the type of generic collection
+     to be returned.</td>
         </tr>
       </table>
   </div>
@@ -1342,19 +1354,20 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this instance as native types.
- The possible types returned are:
+  <div class="jd-tagdata jd-tagdescr"><p>getValue() returns the data contained in this instance as native types. The possible types
+ returned are:
+
  <ul>
-  <li>Boolean</li>
-  <li>String</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
+   <li>Boolean
+   <li>String
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
  </ul>
- This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code>
- in the above list is given by the same list. These types correspond to the
- types available in JSON.</p></div>
+
+ This list is recursive; the possible types for <code><a href="../../../../../reference/java/lang/Object.html">Object</a></code> in the above list is
+ given by the same list. These types correspond to the types available in JSON.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>The data contained in this instance as native types
@@ -1387,16 +1400,18 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is used to marshall the data contained in this instance into a class of your choosing. The class
- must fit 2 simple constraints:
+  <div class="jd-tagdata jd-tagdescr"><p>This method is used to marshall the data contained in this instance into a class of your
+ choosing. The class must fit 2 simple constraints:
+
  <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
  </ol>
+
  An example class might look like:
+
  <pre><code>
      class Message {
          private String author;
@@ -1508,8 +1523,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if the data at this location has children, false otherwise
-</li></ul>
+      <ul class="nolist"><li>True if the data at this location has children, false otherwise </li></ul>
   </div>
 
     </div>
@@ -1576,30 +1590,35 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value.
- The native types accepted by this method for the value correspond to the JSON types:
- <ul>
-  <li>Boolean</li>
-  <li>Long</li>
-  <li>Double</li>
-  <li>Map&lt;String, Object&gt;</li>
-  <li>List&lt;Object&gt;</li>
- </ul>
- <br><br>
- In addition, you can set instances of your own class into this location, provided they
- satisfy the following constraints:
- <ol>
-   <li>The class must have a default constructor that takes no arguments</li>
-   <li>
-     The class must define public getters for the properties to be assigned. Properties without
-     a public getter will be set to their default value when an instance is deserialized
-   </li>
- </ol>
- <br><br>
- Generic collections of objects that satisfy the above constraints are also permitted,
- i.e. <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.
+  <div class="jd-tagdata jd-tagdescr"><p>Set the data at this location to the given value. The native types accepted by this method for
+ the value correspond to the JSON types:
 
- Note that this overrides the priority, which must be set separately.</p></div>
+ <ul>
+   <li>Boolean
+   <li>Long
+   <li>Double
+   <li>Map&lt;String, Object&gt;
+   <li>List&lt;Object&gt;
+ </ul>
+
+ <br>
+ <br>
+ In addition, you can set instances of your own class into this location, provided they satisfy
+ the following constraints:
+
+ <ol>
+   <li>The class must have a default constructor that takes no arguments
+   <li> The class must define public getters for the properties to be assigned. Properties
+       without a public getter will be set to their default value when an instance is
+       deserialized
+ </ol>
+
+ <br>
+ <br>
+ Generic collections of objects that satisfy the above constraints are also permitted, i.e.
+ <code>Map&lt;String, MyPOJO&gt;</code>, as well as null values.
+
+ <p>Note that this overrides the priority, which must be set separately.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

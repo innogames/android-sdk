@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -513,9 +523,8 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">The entry point for accessing a Firebase Database.  You can get an instance by calling
- <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance()">getInstance()</a></code>. To access a location in the database and read or
- write data, use <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getReference()">getReference()</a></code>.
+<p itemprop="articleBody">The entry point for accessing a Firebase Database. You can get an instance by calling <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance()">getInstance()</a></code>. To access a location in the database and read or write data, use
+ <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getReference()">getReference()</a></code>.
 </p>
 
 
@@ -603,15 +612,32 @@ Summary:
             <a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html">FirebaseDatabase</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance()">getInstance</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance(java.lang.String)">getInstance</a></span>(String url)</nobr>
         
-        <div class="jd-descrdiv">Gets the instance of FirebaseDatabase for the default FirebaseApp.</div>
+        <div class="jd-descrdiv">Gets a FirebaseDatabase instance for the specified URL.</div>
   
   </td></tr>
 
 
 	 
     <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html">FirebaseDatabase</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance()">getInstance</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Gets the default FirebaseDatabase instance.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -628,6 +654,23 @@ Summary:
 
 
 	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            static
+            
+            <a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html">FirebaseDatabase</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getInstance(com.google.firebase.FirebaseApp, java.lang.String)">getInstance</a></span>(<a href="../../../../../reference/com/google/firebase/FirebaseApp.html">FirebaseApp</a> app, String url)</nobr>
+        
+        <div class="jd-descrdiv">Gets a FirebaseDatabase instance for the specified URL, using the specified FirebaseApp.</div>
+  
+  </td></tr>
+
+
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
@@ -639,6 +682,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#getReference()">getReference</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Gets a DatabaseReference for the database root node.</div>
+  
   </td></tr>
 
 
@@ -720,7 +765,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#goOnline()">goOnline</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Resumes our connection to the Firebase Database backend after a previous <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#goOffline()">goOffline()</a></code> call.</div>
+        <div class="jd-descrdiv">Resumes our connection to the Firebase Database backend after a previous <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#goOffline()">goOffline()</a></code>
+ call.</div>
   
   </td></tr>
 
@@ -737,8 +783,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#purgeOutstandingWrites()">purgeOutstandingWrites</a></span>()</nobr>
         
-        <div class="jd-descrdiv">The Firebase Database client automatically queues writes and sends them to the server at the earliest opportunity,
- depending on network connectivity.</div>
+        <div class="jd-descrdiv">The Firebase Database client automatically queues writes and sends them to the server at the
+ earliest opportunity, depending on network connectivity.</div>
   
   </td></tr>
 
@@ -762,6 +808,23 @@ Summary:
 
 	 
     <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#setPersistenceCacheSizeBytes(long)">setPersistenceCacheSizeBytes</a></span>(long cacheSizeInBytes)</nobr>
+        
+        <div class="jd-descrdiv">By default Firebase Database will use up to 10MB of disk space to cache data.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -1058,6 +1121,48 @@ From class
 </div>
 
 
+<A NAME="getInstance(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+        <a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html">FirebaseDatabase</a>
+      </span>
+      <span class="sympad">getInstance</span>
+      <span class="normal">(String url)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a FirebaseDatabase instance for the specified URL.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>url</td>
+          <td>The URL to the Firebase Database instance you want to access.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A FirebaseDatabase instance.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getInstance()"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1080,7 +1185,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Gets the instance of FirebaseDatabase for the default FirebaseApp.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the default FirebaseDatabase instance.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>A FirebaseDatabase instance.
@@ -1133,6 +1238,52 @@ From class
 </div>
 
 
+<A NAME="getInstance(com.google.firebase.FirebaseApp, java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+        <a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html">FirebaseDatabase</a>
+      </span>
+      <span class="sympad">getInstance</span>
+      <span class="normal">(<a href="../../../../../reference/com/google/firebase/FirebaseApp.html">FirebaseApp</a> app, String url)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a FirebaseDatabase instance for the specified URL, using the specified FirebaseApp.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>app</td>
+          <td>The FirebaseApp to get a FirebaseDatabase for.</td>
+        </tr>
+        <tr>
+          <th>url</td>
+          <td>The URL to the Firebase Database instance you want to access.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A FirebaseDatabase instance.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getReference()"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1155,7 +1306,12 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a DatabaseReference for the database root node.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A DatabaseReference pointing to the root node.
+</li></ul>
+  </div>
 
     </div>
 </div>
@@ -1225,10 +1381,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Gets a DatabaseReference for the provided URL.  The URL must be a URL to a path
- within this FirebaseDatabase.  To create a DatabaseReference to a different database,
- create a <code><a href="../../../../../reference/com/google/firebase/FirebaseApp.html">FirebaseApp</a></code> with a <code><a href="../../../../../reference/com/google/firebase/FirebaseOptions.html">FirebaseOptions</a></code> object configured with
- the appropriate database URL.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets a DatabaseReference for the provided URL. The URL must be a URL to a path within this
+ FirebaseDatabase. To create a DatabaseReference to a different database, create a <code><a href="../../../../../reference/com/google/firebase/FirebaseApp.html">FirebaseApp</a></code> with a <code><a href="../../../../../reference/com/google/firebase/FirebaseOptions.html">FirebaseOptions</a></code> object configured with the appropriate database
+ URL.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1273,8 +1428,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>The semver version for this build of the Firebase Database client
-</li></ul>
+      <ul class="nolist"><li>The semver version for this build of the Firebase Database client </li></ul>
   </div>
 
     </div>
@@ -1332,7 +1486,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Resumes our connection to the Firebase Database backend after a previous <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#goOffline()">goOffline()</a></code> call.
+  <div class="jd-tagdata jd-tagdescr"><p>Resumes our connection to the Firebase Database backend after a previous <code><a href="../../../../../reference/com/google/firebase/database/FirebaseDatabase.html#goOffline()">goOffline()</a></code>
+ call.
 </p></div>
 
     </div>
@@ -1361,13 +1516,14 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>The Firebase Database client automatically queues writes and sends them to the server at the earliest opportunity,
- depending on network connectivity.  In some cases (e.g. offline usage) there may be a large number of writes
- waiting to be sent. Calling this method will purge all outstanding writes so they are abandoned.
+  <div class="jd-tagdata jd-tagdescr"><p>The Firebase Database client automatically queues writes and sends them to the server at the
+ earliest opportunity, depending on network connectivity. In some cases (e.g. offline usage)
+ there may be a large number of writes waiting to be sent. Calling this method will purge all
+ outstanding writes so they are abandoned.
 
- All writes will be purged, including transactions and <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#onDisconnect()">onDisconnect()</a></code> writes.  The writes will
- be rolled back locally, perhaps triggering events for affected event listeners, and the client will not
- (re-)send them to the Firebase backend.
+ <p>All writes will be purged, including transactions and <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html#onDisconnect()">onDisconnect()</a></code>
+ writes. The writes will be rolled back locally, perhaps triggering events for affected event
+ listeners, and the client will not (re-)send them to the Firebase backend.
 </p></div>
 
     </div>
@@ -1396,18 +1552,61 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>By default, this is set to <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#INFO">INFO</a></code>.
- This includes any internal errors (<code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#ERROR">ERROR</a></code>)
- and any security debug messages (<code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#INFO">INFO</a></code>)
- that the client receives. Set to <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#DEBUG">DEBUG</a></code>
- to turn on the diagnostic logging, and <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#NONE">NONE</a></code>
- to disable all logging.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>By default, this is set to <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#INFO">INFO</a></code>. This includes any internal errors
+ (<code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#ERROR">ERROR</a></code>) and any security debug messages (<code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#INFO">INFO</a></code>) that the client receives. Set to <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#DEBUG">DEBUG</a></code> to turn on the
+ diagnostic logging, and <code><a href="../../../../../reference/com/google/firebase/database/Logger.Level.html#NONE">NONE</a></code> to disable all logging.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>logLevel</td>
           <td>The desired minimum log level
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPersistenceCacheSizeBytes(long)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPersistenceCacheSizeBytes</span>
+      <span class="normal">(long cacheSizeInBytes)</span>
+    </h4>
+      <div class="api-level">
+        <div></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>By default Firebase Database will use up to 10MB of disk space to cache data. If the cache
+ grows beyond this size, Firebase Database will start removing data that hasn't been recently
+ used. If you find that your application caches too little or too much data, call this method to
+ change the cache size. This method must be called before creating your first Database reference
+ and only needs to be called once per application.
+
+ <p>Note that the specified cache size is only an approximation and the size on disk may
+ temporarily exceed it at times. Cache sizes smaller than 1 MB or greater than 100 MB are not
+ supported.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>cacheSizeInBytes</td>
+          <td>The new size of the cache in bytes.
 </td>
         </tr>
       </table>
@@ -1443,12 +1642,11 @@ From class
  initiated while your application is running. It seamlessly handles intermittent network
  connections and re-sends write operations when the network connection is restored.
 
- However by default your write operations and cached data are only stored in-memory and will
- be lost when your app restarts.  By setting this value to `true`, the data will be persisted
- to on-device (disk) storage and will thus be available again when the app is restarted
- (even when there is no network connectivity at that time). Note that this method must be
- called before creating your first Database reference and only needs to be called once per
- application.</p></div>
+ <p>However by default your write operations and cached data are only stored in-memory and will
+ be lost when your app restarts. By setting this value to `true`, the data will be persisted to
+ on-device (disk) storage and will thus be available again when the app is restarted (even when
+ there is no network connectivity at that time). Note that this method must be called before
+ creating your first Database reference and only needs to be called once per application.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

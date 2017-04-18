@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -359,6 +369,10 @@ Doclava
               
     <li><h2>Classes</h2>
       <ul>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/AdBreakClipInfo.html">AdBreakClipInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/AdBreakInfo.html">AdBreakInfo</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/AdBreakInfo.Builder.html">AdBreakInfo.Builder</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/AdBreakStatus.html">AdBreakStatus</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/ApplicationMetadata.html">ApplicationMetadata</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/Cast.html">Cast</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/Cast.CastOptions.html">Cast.CastOptions</a></li>
@@ -387,6 +401,7 @@ Doclava
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/MediaTrack.Builder.html">MediaTrack.Builder</a></li>
           <li class="selected api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/RemoteMediaPlayer.html">RemoteMediaPlayer</a></li>
           <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/TextTrackStyle.html">TextTrackStyle</a></li>
+          <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/cast/VideoInfo.html">VideoInfo</a></li>
       </ul>
     </li>
               
@@ -3928,7 +3943,11 @@ From interface
         </tr>
         <tr>
           <th>repeatMode</td>
-          <td>The repeat playback mode for the queue.</td>
+          <td>The repeat playback mode for the queue. One of
+                   <code><a href="../../../../../../reference/com/google/android/gms/cast/MediaStatus.html#REPEAT_MODE_REPEAT_OFF">REPEAT_MODE_REPEAT_OFF</a></code>,
+                   <code><a href="../../../../../../reference/com/google/android/gms/cast/MediaStatus.html#REPEAT_MODE_REPEAT_ALL">REPEAT_MODE_REPEAT_ALL</a></code>,
+                   <code><a href="../../../../../../reference/com/google/android/gms/cast/MediaStatus.html#REPEAT_MODE_REPEAT_SINGLE">REPEAT_MODE_REPEAT_SINGLE</a></code> or
+                   <code><a href="../../../../../../reference/com/google/android/gms/cast/MediaStatus.html#REPEAT_MODE_REPEAT_ALL_AND_SHUFFLE">REPEAT_MODE_REPEAT_ALL_AND_SHUFFLE</a></code>.</td>
         </tr>
         <tr>
           <th>customData</td>
@@ -4027,10 +4046,10 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Requests updated media status information from the receiver. <code><a href="../../../../../../reference/com/google/android/gms/cast/RemoteMediaPlayer.OnStatusUpdatedListener.html">RemoteMediaPlayer.OnStatusUpdatedListener</a></code>
- callback will be triggered, when the updated media status has been received. This will also
- update the internal state of the <code><a href="../../../../../../reference/com/google/android/gms/cast/RemoteMediaPlayer.html">RemoteMediaPlayer</a></code> object with the current state of
- the receiver, including the current session ID. This method should be called when joining an
- application that supports the media control namespace.</p></div>
+ callback will be triggered if the received media status is different than the current media
+ status. This will also update the internal state of the <code><a href="../../../../../../reference/com/google/android/gms/cast/RemoteMediaPlayer.html">RemoteMediaPlayer</a></code> object with
+ the current state of the receiver, including the current session ID. This method should be
+ called when joining an application that supports the media control namespace.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

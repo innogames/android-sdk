@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -530,8 +540,8 @@ Summary:
   <table class="jd-sumtable-expando">
         <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></td>
-              <td class="jd-descrcol" width="100%">A Firebase reference represents a particular location in your Database
- and can be used for reading or writing data to that Database location.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">A Firebase reference represents a particular location in your Database and can be used for
+ reading or writing data to that Database location.&nbsp;</td>
           </tr>
   </table>
       </div>
@@ -546,8 +556,8 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">The Query class (and its subclass, <code><a href="../../../../../reference/com/google/firebase/database/DatabaseReference.html">DatabaseReference</a></code>) are used for reading data.
- Listeners are attached, and they will be triggered when the corresponding data changes.
- <br><br>
+ Listeners are attached, and they will be triggered when the corresponding data changes. <br>
+ <br>
  Instances of Query are obtained by calling startAt(), endAt(), or limit() on a DatabaseReference.
 </p>
 
@@ -672,9 +682,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(java.lang.String, java.lang.String)">endAt</a></span>(String value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -691,8 +701,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(java.lang.String)">endAt</a></span>(String value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -709,9 +719,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(double, java.lang.String)">endAt</a></span>(double value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -728,8 +738,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(double)">endAt</a></span>(double value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -746,8 +756,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(boolean)">endAt</a></span>(boolean value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -764,9 +774,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#endAt(boolean, java.lang.String)">endAt</a></span>(boolean value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</div>
   
   </td></tr>
 
@@ -900,8 +910,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#keepSynced(boolean)">keepSynced</a></span>(boolean keepSynced)</nobr>
         
-        <div class="jd-descrdiv">By calling `keepSynced(true)` on a location, the data for that location will automatically be downloaded and
- kept in sync, even when no listeners are attached for that location.</div>
+        <div class="jd-descrdiv">By calling `keepSynced(true)` on a location, the data for that location will automatically be
+ downloaded and kept in sync, even when no listeners are attached for that location.</div>
   
   </td></tr>
 
@@ -1054,8 +1064,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(double)">startAt</a></span>(double value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1072,9 +1082,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(java.lang.String, java.lang.String)">startAt</a></span>(String value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1091,8 +1101,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(java.lang.String)">startAt</a></span>(String value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1109,9 +1119,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(double, java.lang.String)">startAt</a></span>(double value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1128,8 +1138,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(boolean)">startAt</a></span>(boolean value)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</div>
   
   </td></tr>
 
@@ -1146,9 +1156,9 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../reference/com/google/firebase/database/Query.html#startAt(boolean, java.lang.String)">startAt</a></span>(boolean value, String key)</nobr>
         
-        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</div>
+        <div class="jd-descrdiv">Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</div>
   
   </td></tr>
 
@@ -1422,8 +1432,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add a listener for child events occurring at this location. When child locations are added, removed,
- changed, or moved, the listener will be triggered for the appropriate event</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Add a listener for child events occurring at this location. When child locations are added,
+ removed, changed, or moved, the listener will be triggered for the appropriate event</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1465,8 +1475,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add a listener for a single change in the data at this location. This listener will be triggered
- once with the value of the data at the location.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Add a listener for a single change in the data at this location. This listener will be
+ triggered once with the value of the data at the location.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1547,9 +1557,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key key less than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key key less than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1595,8 +1605,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1638,9 +1648,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1686,8 +1696,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1729,8 +1739,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -1771,9 +1781,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key less than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value less than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key less than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2087,8 +2097,7 @@ From class
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A DatabaseReference to this location
-</li></ul>
+      <ul class="nolist"><li>A DatabaseReference to this location </li></ul>
   </div>
 
     </div>
@@ -2117,15 +2126,17 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>By calling `keepSynced(true)` on a location, the data for that location will automatically be downloaded and
- kept in sync, even when no listeners are attached for that location. Additionally, while a location is kept
- synced, it will not be evicted from the persistent disk cache.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>By calling `keepSynced(true)` on a location, the data for that location will automatically be
+ downloaded and kept in sync, even when no listeners are attached for that location.
+ Additionally, while a location is kept synced, it will not be evicted from the persistent disk
+ cache.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
           <th>keepSynced</td>
-          <td>Pass `true` to keep this location synchronized, pass `false` to stop synchronization.
+          <td>Pass `true` to keep this location synchronized, pass `false` to stop
+     synchronization.
 </td>
         </tr>
       </table>
@@ -2452,8 +2463,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2495,9 +2506,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2543,8 +2554,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2586,9 +2597,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2634,8 +2645,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
@@ -2676,9 +2687,9 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to
- the given value, using the given orderBy directive or priority as default, and additionally
- only child nodes with a key greater than or equal to the given key.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Create a query constrained to only return child nodes with a value greater than or equal to the
+ given value, using the given orderBy directive or priority as default, and additionally only
+ child nodes with a key greater than or equal to the given key.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">

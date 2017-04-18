@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -529,12 +539,14 @@ Summary:
 
 <h2>Class Overview</h2>
 <p itemprop="articleBody">A multi-detector is used to combine multiple detectors, so that multiple detectors can be used
- together on a frame or frames received from a source within a pipeline.  Each detector is run
- separately on each associated frame.<p>
+ together on a frame or frames received from a source within a pipeline. Each detector is run
+ separately on each associated frame.
 
- For example, the code below creates and starts a pipeline that continuously receives preview
- frames from a camera source, runs two different detectors on each frame, and delivers results
- to associated processors.<p>
+ <p>For example, the code below creates and starts a pipeline that continuously receives preview
+ frames from a camera source, runs two different detectors on each frame, and delivers results to
+ associated processors.
+
+ <p>
 
  <pre><code>fooDetector.setProcessor(new MyFooProcessor());
  barDetector.setProcessor(new MyBarProcessor());
@@ -661,8 +673,8 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/vision/MultiDetector.html#isOperational()">isOperational</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in
- order to do detection.</div>
+        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in order
+ to do detection.</div>
   
   </td></tr>
 
@@ -766,8 +778,8 @@ From class
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../reference/com/google/android/gms/vision/Detector.html#isOperational()">isOperational</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in
- order to do detection.</div>
+        <div class="jd-descrdiv">Indicates whether the detector has all of the required dependencies available locally in order
+ to do detection.</div>
   
   </td></tr>
 
@@ -1107,8 +1119,8 @@ From class
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>mapping of int to detected object, where the int domain represents the ID of the
-   associated item.  If tracking is enabled, as the same item is detected in consecutive
-   frames, the detector will return the same ID for that item.</li></ul>
+     associated item. If tracking is enabled, as the same item is detected in consecutive
+     frames, the detector will return the same ID for that item.</li></ul>
   </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
@@ -1116,9 +1128,9 @@ From class
         <tr>
             <th>IllegalStateException</td>
             <td>This indicates that the results from the underlying detectors
-   could not be combined, because the same ID was associated with different detected items.
-   This likely means that there is a bug with one of the detectors, in that it did not
-   translate its detected item IDs to the global ID space.
+     could not be combined, because the same ID was associated with different detected items.
+     This likely means that there is a bug with one of the detectors, in that it did not
+     translate its detected item IDs to the global ID space.
 </td>
         </tr>
       </table>
@@ -1150,23 +1162,21 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Indicates whether the detector has all of the required dependencies available locally in
- order to do detection.<p>
+  <div class="jd-tagdata jd-tagdescr"><p>Indicates whether the detector has all of the required dependencies available locally in order
+ to do detection.
 
- When an app is first installed, it may be necessary to download required files.  If this
- returns false, those files are not yet available.  Usually this download is taken care of at
- application install time, but this is not guaranteed.  In some cases the download may have
- been delayed. <p>
+ <p>When an app is first installed, it may be necessary to download required files. If this
+ returns false, those files are not yet available. Usually this download is taken care of at
+ application install time, but this is not guaranteed. In some cases the download may have been
+ delayed.
 
- If your code has added a processor, an indication of the detector operational state is also
- indicated with the
- <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#detectorIsOperational()">detectorIsOperational()</a></code> method.
- You can check this in your app as it processes detection results, and can convey this state
- to the user if appropriate.</p></div>
+ <p>If your code has added a processor, an indication of the detector operational state is also
+ indicated with the <code><a href="../../../../../../reference/com/google/android/gms/vision/Detector.Detections.html#detectorIsOperational()">detectorIsOperational()</a></code> method. You can
+ check this in your app as it processes detection results, and can convey this state to the user
+ if appropriate.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>true if the detector is operational, false if the dependency download is in
- progress
+      <ul class="nolist"><li>true if the detector is operational, false if the dependency download is in progress
 </li></ul>
   </div>
 
@@ -1226,8 +1236,8 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method is not supported on MultiDetector.  Instead, processor instances may be set on
- each underlying detector that is added in creating this MultiDetector.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>This method is not supported on MultiDetector. Instead, processor instances may be set on each
+ underlying detector that is added in creating this MultiDetector.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Throws</h5>
       <table class="jd-tagtable">  

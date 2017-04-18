@@ -145,6 +145,8 @@ Doclava
               <ul>
                 
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/package-summary.html">com.google.android.gms</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/actions/package-summary.html">com.google.android.gms.actions</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/ads/package-summary.html">com.google.android.gms.ads</a></li>
@@ -267,6 +269,8 @@ Doclava
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/iid/package-summary.html">com.google.android.gms.iid</a></li>
     <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/instantapps/package-summary.html">com.google.android.gms.instantapps</a></li>
+    <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/package-summary.html">com.google.android.gms.location</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/location/places/package-summary.html">com.google.android.gms.location.places</a></li>
@@ -284,6 +288,8 @@ Doclava
   <a href="../../../../../../reference/com/google/android/gms/nearby/connection/package-summary.html">com.google.android.gms.nearby.connection</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/nearby/messages/package-summary.html">com.google.android.gms.nearby.messages</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/android/gms/nearby/messages/audio/package-summary.html">com.google.android.gms.nearby.messages.audio</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/android/gms/panorama/package-summary.html">com.google.android.gms.panorama</a></li>
     <li class="api apilevel-">
@@ -318,6 +324,10 @@ Doclava
   <a href="../../../../../../reference/com/google/firebase/package-summary.html">com.google.firebase</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/analytics/package-summary.html">com.google.firebase.analytics</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/package-summary.html">com.google.firebase.appindexing</a></li>
+    <li class="api apilevel-">
+  <a href="../../../../../../reference/com/google/firebase/appindexing/builders/package-summary.html">com.google.firebase.appindexing.builders</a></li>
     <li class="api apilevel-">
   <a href="../../../../../../reference/com/google/firebase/auth/package-summary.html">com.google.firebase.auth</a></li>
     <li class="api apilevel-">
@@ -362,6 +372,7 @@ Doclava
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMarkerDragListener.html">GoogleMap.OnMarkerDragListener</a></li>
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationButtonClickListener.html">GoogleMap.OnMyLocationButtonClickListener</a></li>
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationChangeListener.html">GoogleMap.OnMyLocationChangeListener</a></li>
+        <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a></li>
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolygonClickListener.html">GoogleMap.OnPolygonClickListener</a></li>
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolylineClickListener.html">GoogleMap.OnPolylineClickListener</a></li>
         <li class="api apilevel-"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.SnapshotReadyCallback.html">GoogleMap.SnapshotReadyCallback</a></li>
@@ -479,7 +490,6 @@ Doclava
     Replaced by <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraMoveStartedListener.html">GoogleMap.OnCameraMoveStartedListener</a></code>, <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraMoveListener.html">GoogleMap.OnCameraMoveListener</a></code> and
  <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnCameraIdleListener.html">GoogleMap.OnCameraIdleListener</a></code>. The order in which the deprecated <code>onCameraChange</code> method
  will be called in relation to the methods in the new camera change listeners is undefined.
-
 </em>&nbsp;</td>
           </tr>
         <tr class=" api apilevel-" >
@@ -551,7 +561,7 @@ Doclava
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnMyLocationChangeListener.html">GoogleMap.OnMyLocationChangeListener</a></td>
               <td class="jd-descrcol" width="100%"><em>
       This interface is deprecated.
-    use com.google.android.gms.location.FusedLocationProviderApi instead.
+    Use com.google.android.gms.location.FusedLocationProviderApi instead.
  FusedLocationProviderApi provides improved location finding and power usage and is used by
  the "My Location" blue dot. See the MyLocationDemoActivity in the sample applications folder
  for example example code, or the
@@ -560,48 +570,52 @@ Doclava
 </em>&nbsp;</td>
           </tr>
         <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPoiClickListener.html">GoogleMap.OnPoiClickListener</a></td>
+              <td class="jd-descrcol" width="100%">A listener for POI taps.&nbsp;</td>
+          </tr>
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolygonClickListener.html">GoogleMap.OnPolygonClickListener</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when a polygon is clicked.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.OnPolylineClickListener.html">GoogleMap.OnPolylineClickListener</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when a polyline is clicked.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.SnapshotReadyCallback.html">GoogleMap.SnapshotReadyCallback</a></td>
               <td class="jd-descrcol" width="100%">Callback interface to notify when the snapshot has been taken.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/LocationSource.html">LocationSource</a></td>
               <td class="jd-descrcol" width="100%">Defines an interface for providing location data, typically to a <code><a href="../../../../../../reference/com/google/android/gms/maps/GoogleMap.html">GoogleMap</a></code> object.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/LocationSource.OnLocationChangedListener.html">LocationSource.OnLocationChangedListener</a></td>
               <td class="jd-descrcol" width="100%">Handles a location update.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/OnMapReadyCallback.html">OnMapReadyCallback</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when the map is ready to be used.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/OnStreetViewPanoramaReadyCallback.html">OnStreetViewPanoramaReadyCallback</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when the Street View panorama is ready to be used.&nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaCameraChangeListener</a></td>
               <td class="jd-descrcol" width="100%">A listener for when the StreetViewPanoramaCamera changes
 &nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.OnStreetViewPanoramaChangeListener.html">StreetViewPanorama.OnStreetViewPanoramaChangeListener</a></td>
               <td class="jd-descrcol" width="100%">A listener for when the Street View panorama loads a new panorama
 &nbsp;</td>
           </tr>
-        <tr class=" api apilevel-" >
+        <tr class="alt-color api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.OnStreetViewPanoramaClickListener.html">StreetViewPanorama.OnStreetViewPanoramaClickListener</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when the user taps on the panorama.&nbsp;</td>
           </tr>
-        <tr class="alt-color api apilevel-" >
+        <tr class=" api apilevel-" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/google/android/gms/maps/StreetViewPanorama.OnStreetViewPanoramaLongClickListener.html">StreetViewPanorama.OnStreetViewPanoramaLongClickListener</a></td>
               <td class="jd-descrcol" width="100%">Callback interface for when the user long presses on the panorama.&nbsp;</td>
           </tr>
